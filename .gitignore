@@ -1,9 +1,7 @@
-steevenjanny.github.io-main.zip
-recarga claro borrar.pdf
-steevenjanny.github.io-main/steevenjanny.github.io-main/assets/demo_arxiv_tool.mp4
-steevenjanny.github.io-main/steevenjanny.github.io-main/assets/brands/nle.jpeg
-steevenjanny.github.io-main/steevenjanny.github.io-main/assets/demo_slides.mp4
-steevenjanny.github.io-main/steevenjanny.github.io-main/assets/avatar.jpg
-steevenjanny.github.io-main/steevenjanny.github.io-main/content/attendedtemperature/featured.png
-
-*.mp4
+# Ignore unnecessary files
+*.pdf
+*.zip
+img_img/
+steevenjanny.github.io-main/
+Fotos Editadas Mazarino/
+Logo Mazarino/
