@@ -1,354 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <!-- ================================================
-         CUSTOMIZATION: Change your website title and description
-         - title: What appears in the browser tab
-         - description: SEO description for search engines
-    ================================================ -->
-    <meta name="description" content="Your Company - Professional solutions for your business needs"/>
-    <meta name="Arte Manual Mazarino" content="Arte Manual Mazarino"/>
-    <title>Your Company Name | Professional Solutions</title>
-
-    <!-- Bootstrap 5 CSS -->
+    <meta name="description" content="Mazarino - Refrigerios, Brunch y Desayunos Empresariales en Bogotá. Cuidamos cada detalle para tus eventos corporativos."/>
+    <meta name="author" content="Arte Manual Mazarino"/>
+    <title>Mazarino | Refrigerios & Brunch Empresarial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
-    <!-- Custom Styles -->
     <link href="css/styles.css" rel="stylesheet"/>
 </head>
 <body>
 
-<!-- ================================================
-     NAVIGATION BAR
-     CUSTOMIZATION: Change company name and menu links
-=============================================== -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
-        <!-- CUSTOMIZE: Your company/brand name -->
-        <a class="navbar-brand" href="#home">
-            <i class="fas fa-building me-2"></i>YourCompany
+        <a class="navbar-brand d-flex align-items-center" href="#inicio">
+            <img src="MainLogo.png" alt="Mazarino Logo" style="height: 45px; margin-right: 10px;">
+            Mazarino
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- ================================================
-     HERO SECTION (Main Banner)
-     CUSTOMIZATION: Change background image, headline, and CTA button text
-     - Background image is set in css/styles.css under .hero-section
-=============================================== -->
-<section id="home" class="hero-section">
+<!-- HERO -->
+<section id="inicio" class="hero-section">
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="row min-vh-100 align-items-center">
             <div class="col-lg-8 text-white">
-                <!-- CUSTOMIZE: Your main headline -->
-                <h1 class="display-3 fw-bold mb-4">Welcome to Your Company</h1>
-                <!-- CUSTOMIZE: Your tagline/subtitle -->
-                <p class="lead mb-4 fs-4">We provide innovative solutions to help your business grow and succeed in the digital age.</p>
+                <img src="SloganMazarino.png" alt="Cuidamos cada detalle" style="max-width: 350px; margin-bottom: 30px;">
+                <h1 class="display-3 fw-bold mb-4">Refrigerios & Brunch Empresarial</h1>
+                <p class="lead mb-4 fs-4">Soluciones gastronómicas frescas, equilibradas y presentadas con excelencia para reuniones, capacitaciones, eventos corporativos y oficinas en Bogotá.</p>
                 <div class="d-flex gap-3">
-                    <!-- CUSTOMIZE: Button text and links -->
-                    <a href="#services" class="btn btn-light btn-lg px-4 py-2">Our Services</a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-2">Contact Us</a>
+                    <a href="#menu" class="btn btn-light btn-lg px-4 py-2">Ver Menú</a>
+                    <a href="#contacto" class="btn btn-outline-light btn-lg px-4 py-2">Cotizar Ahora</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Scroll down indicator -->
-    <a href="#about" class="scroll-down">
-        <i class="fas fa-chevron-down"></i>
-    </a>
+    <a href="#nosotros" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
 </section>
 
-<!-- ================================================
-     ABOUT SECTION
-     CUSTOMIZATION: Change company description, image, and stats
-=============================================== -->
-<section id="about" class="py-5">
+<!-- NOSOTROS -->
+<section id="nosotros" class="py-5">
     <div class="container py-5">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <!-- CUSTOMIZE: Replace with your company image -->
-                <!-- Change the URL below to your own image path like "images/about.jpg" -->
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800" 
-                     alt="About Our Company" class="img-fluid rounded-3 shadow about-img">
+                <img src="Fotos Editadas Mazarino/1.png" alt="Refrigerios Mazarino" class="img-fluid rounded-3 shadow about-img">
             </div>
             <div class="col-lg-6">
-                <h6 class="text-primary fw-bold text-uppercase">About Us</h6>
-                <!-- CUSTOMIZE: Your company title -->
-                <h2 class="mb-4">We Are Leading the Way in Business Solutions</h2>
-                <!-- CUSTOMIZE: Your company description -->
-                <p class="text-muted mb-4">
-                    Founded in 2020, YourCompany has been at the forefront of delivering exceptional services to our clients. 
-                    We combine innovation with expertise to create solutions that drive real results.
-                </p>
-                <p class="text-muted mb-4">
-                    Our team of dedicated professionals works tirelessly to ensure customer satisfaction. 
-                    We believe in building long-term relationships based on trust, quality, and transparency.
-                </p>
-                <!-- CUSTOMIZE: Your key features/list -->
+                <h6 class="text-primary fw-bold text-uppercase">Sobre Nosotros</h6>
+                <h2 class="mb-4">Cuidamos Cada Detalle de tu Evento</h2>
+                <p class="text-muted mb-4">En Mazarino creemos que una buena reunión se construye desde los detalles más pequeños. Nos especializamos en la preparación y entrega de refrigerios y brunch de alta calidad para empresas, cuidando cada ingrediente, la presentación y la puntualidad.</p>
+                <p class="text-muted mb-4">Ofrecemos opciones variadas, saludables y deliciosas que se adapten a las necesidades de tu equipo: desde refrigerios estándar hasta desayunos completos y brunch ejecutivos. Todo preparado con ingredientes frescos, empaques individuales o grupales, y entregas en Bogotá y zona periférica los 365 días del año.</p>
                 <div class="row mt-4">
                     <div class="col-md-6">
                         <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Innovative Solutions</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Expert Team</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>24/7 Support</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Calidad y Frescura</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Atención al Detalle</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Confianza y Puntualidad</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Quality Guaranteed</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Affordable Pricing</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Fast Delivery</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Variedad de Opciones</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Entregas 365 días</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Pedidos desde 15 unidades</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- STATS COUNTER -->
         <div class="row mt-5 pt-5 text-center">
-            <!-- CUSTOMIZE: Your company statistics -->
-            <div class="col-md-3 col-6 mb-4">
-                <div class="stat-number">500+</div>
-                <div class="text-muted">Happy Clients</div>
-            </div>
-            <div class="col-md-3 col-6 mb-4">
-                <div class="stat-number">1200+</div>
-                <div class="text-muted">Projects Done</div>
-            </div>
-            <div class="col-md-3 col-6 mb-4">
-                <div class="stat-number">50+</div>
-                <div class="text-muted">Team Members</div>
-            </div>
-            <div class="col-md-3 col-6 mb-4">
-                <div class="stat-number">15+</div>
-                <div class="text-muted">Years Experience</div>
-            </div>
+            <div class="col-md-3 col-6 mb-4"><div class="stat-number">500+</div><div class="text-muted">Eventos Atendidos</div></div>
+            <div class="col-md-3 col-6 mb-4"><div class="stat-number">365</div><div class="text-muted">Días de Entrega</div></div>
+            <div class="col-md-3 col-6 mb-4"><div class="stat-number">50+</div><div class="text-muted">Empresas Confían</div></div>
+            <div class="col-md-3 col-6 mb-4"><div class="stat-number">100%</div><div class="text-muted">Ingredientes Frescos</div></div>
         </div>
     </div>
 </section>
 
-<!-- ================================================
-     SERVICES SECTION
-     CUSTOMIZATION: Change service cards, icons, titles, and descriptions
-     To change icons, visit https://fontawesome.com/icons and replace the class name
-=============================================== -->
-<section id="services" class="py-5 bg-light">
+<!-- SERVICIOS -->
+<section id="servicios" class="py-5 bg-light">
     <div class="container py-5">
         <div class="text-center mb-5">
-            <h6 class="text-primary fw-bold text-uppercase">What We Offer</h6>
-            <!-- CUSTOMIZE: Services section title -->
-            <h2>Our Services</h2>
-            <p class="text-muted mx-auto" style="max-width: 600px;">
-                We offer a wide range of services to meet your business needs
-            </p>
+            <h6 class="text-primary fw-bold text-uppercase">Nuestros Servicios</h6>
+            <h2>Soluciones para Cada Occasión</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">Ofrecemos una amplia gama de opciones gastronómicas para empresas</p>
         </div>
-
         <div class="row g-4">
-            <!-- SERVICE CARD 1 - CUSTOMIZE: Change icon, title, description -->
             <div class="col-lg-4 col-md-6">
                 <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
-                    <div class="service-icon mb-3">
-                        <!-- CUSTOMIZE: Icon - change "fa-laptop-code" to any icon from Font Awesome -->
-                        <i class="fas fa-laptop-code fa-3x text-primary"></i>
-                    </div>
-                    <h4>Web Development</h4>
-                    <p class="text-muted">
-                        Custom websites and web applications built with the latest technologies for optimal performance.
-                    </p>
-                    <a href="#" class="btn btn-link text-primary p-0">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="service-icon mb-3"><i class="fas fa-cookie-bite fa-3x text-primary"></i></div>
+                    <h4>Refrigerios Estándar</h4>
+                    <p class="text-muted">Sanduches variados, bebidas y complementos. Perfectos para reuniones cortas. Desde $13.900 COP.</p>
+                    <a href="#menu" class="btn btn-link text-primary p-0">Ver Opciones <i class="fas fa-arrow-right ms-1"></i></a>
                 </div>
             </div>
-
-            <!-- SERVICE CARD 2 -->
             <div class="col-lg-4 col-md-6">
                 <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
-                    <div class="service-icon mb-3">
-                        <i class="fas fa-mobile-alt fa-3x text-primary"></i>
-                    </div>
-                    <h4>Mobile Apps</h4>
-                    <p class="text-muted">
-                        Native and cross-platform mobile applications for iOS and Android devices.
-                    </p>
-                    <a href="#" class="btn btn-link text-primary p-0">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="service-icon mb-3"><i class="fas fa-utensils fa-3x text-primary"></i></div>
+                    <h4>Menús Básicos</h4>
+                    <p class="text-muted">Combos completos con wrap o sanduche, jugo o té y fruta fresca. Desde $16.200 COP.</p>
+                    <a href="#menu" class="btn btn-link text-primary p-0">Ver Opciones <i class="fas fa-arrow-right ms-1"></i></a>
                 </div>
             </div>
-
-            <!-- SERVICE CARD 3 -->
             <div class="col-lg-4 col-md-6">
                 <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
-                    <div class="service-icon mb-3">
-                        <i class="fas fa-chart-line fa-3x text-primary"></i>
-                    </div>
-                    <h4>Digital Marketing</h4>
-                    <p class="text-muted">
-                        SEO, social media marketing, and content strategy to grow your online presence.
-                    </p>
-                    <a href="#" class="btn btn-link text-primary p-0">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="service-icon mb-3"><i class="fas fa-coffee fa-3x text-primary"></i></div>
+                    <h4>Brunch Empresarial</h4>
+                    <p class="text-muted">Desayunos completos con omelletes, tamales, tostadas y más. Desde $20.700 COP.</p>
+                    <a href="#menu" class="btn btn-link text-primary p-0">Ver Opciones <i class="fas fa-arrow-right ms-1"></i></a>
                 </div>
             </div>
-
-            <!-- SERVICE CARD 4 -->
             <div class="col-lg-4 col-md-6">
                 <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
-                    <div class="service-icon mb-3">
-                        <i class="fas fa-paint-brush fa-3x text-primary"></i>
-                    </div>
-                    <h4>UI/UX Design</h4>
-                    <p class="text-muted">
-                        Beautiful and intuitive user interfaces designed for the best user experience.
-                    </p>
-                    <a href="#" class="btn btn-link text-primary p-0">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="service-icon mb-3"><i class="fas fa-mug-hot fa-3x text-primary"></i></div>
+                    <h4>Desayunos Deliciosos</h4>
+                    <p class="text-muted">Menús premium con milanesas, omelletes, tamales tradicionales. Desde $23.600 COP.</p>
+                    <a href="#menu" class="btn btn-link text-primary p-0">Ver Opciones <i class="fas fa-arrow-right ms-1"></i></a>
                 </div>
             </div>
-
-            <!-- SERVICE CARD 5 -->
             <div class="col-lg-4 col-md-6">
                 <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
-                    <div class="service-icon mb-3">
-                        <i class="fas fa-cloud fa-3x text-primary"></i>
-                    </div>
-                    <h4>Cloud Solutions</h4>
-                    <p class="text-muted">
-                        Scalable cloud infrastructure and deployment solutions for your applications.
-                    </p>
-                    <a href="#" class="btn btn-link text-primary p-0">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="service-icon mb-3"><i class="fas fa-truck fa-3x text-primary"></i></div>
+                    <h4>Entregas en Bogotá</h4>
+                    <p class="text-muted">Reparto en Bogotá D.C. y zona periférica. Disponible 365 días, las 24 horas.</p>
+                    <a href="#contacto" class="btn btn-link text-primary p-0">Cotizar Envío <i class="fas fa-arrow-right ms-1"></i></a>
                 </div>
             </div>
-
-            <!-- SERVICE CARD 6 -->
             <div class="col-lg-4 col-md-6">
                 <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
-                    <div class="service-icon mb-3">
-                        <i class="fas fa-shield-alt fa-3x text-primary"></i>
-                    </div>
-                    <h4>Cybersecurity</h4>
-                    <p class="text-muted">
-                        Protect your business with our comprehensive security solutions and consulting.
-                    </p>
-                    <a href="#" class="btn btn-link text-primary p-0">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="service-icon mb-3"><i class="fas fa-palette fa-3x text-primary"></i></div>
+                    <h4>Eventos Personalizados</h4>
+                    <p class="text-muted">Adaptamos nuestros menús a tus necesidades. Opciones estándar, saludables y premium.</p>
+                    <a href="#contacto" class="btn btn-link text-primary p-0">Consultar <i class="fas fa-arrow-right ms-1"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ================================================
-     PORTFOLIO/PROJECTS SECTION
-     CUSTOMIZATION: Change project images, titles, and categories
-=============================================== -->
-<section id="portfolio" class="py-5">
+<!-- MENÚ / PRODUCTOS -->
+<section id="menu" class="py-5">
     <div class="container py-5">
         <div class="text-center mb-5">
-            <h6 class="text-primary fw-bold text-uppercase">Our Work</h6>
-            <h2>Recent Projects</h2>
-            <p class="text-muted mx-auto" style="max-width: 600px;">
-                Take a look at some of our recent work and success stories
-            </p>
+            <h6 class="text-primary fw-bold text-uppercase">Nuestro Menú</h6>
+            <h2>Productos y Precios</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">Todas nuestras opciones incluyen ingredientes frescos y presentación premium</p>
         </div>
-
-        <!-- Filter Buttons - CUSTOMIZE: Change categories -->
         <div class="text-center mb-4">
-            <button class="btn btn-outline-primary m-1 active" data-filter="all">All</button>
-            <button class="btn btn-outline-primary m-1" data-filter="web">Web Design</button>
-            <button class="btn btn-outline-primary m-1" data-filter="app">Apps</button>
-            <button class="btn btn-outline-primary m-1" data-filter="marketing">Marketing</button>
+            <button class="btn btn-outline-primary m-1 active" data-filter="all">Todos</button>
+            <button class="btn btn-outline-primary m-1" data-filter="refrigerio">Refrigerios</button>
+            <button class="btn btn-outline-primary m-1" data-filter="menu-basico">Menús Básicos</button>
+            <button class="btn btn-outline-primary m-1" data-filter="brunch">Brunch</button>
+            <button class="btn btn-outline-primary m-1" data-filter="desayuno">Desayunos</button>
         </div>
-
         <div class="row g-4">
-            <!-- PORTFOLIO ITEM 1 - CUSTOMIZE: image, title, category -->
-            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-                <div class="portfolio-card position-relative overflow-hidden rounded-3">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600" 
-                         alt="Project 1" class="img-fluid w-100">
-                    <div class="portfolio-overlay">
-                        <h5>E-Commerce Website</h5>
-                        <p class="text-muted">Web Design</p>
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-link"></i> View Project</a>
+            <!-- Refrigerio Estándar -->
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="refrigerio">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/2.png" alt="Refrigerio Estándar" class="img-fluid w-100"></div>
+                    <div class="p-3">
+                        <span class="product-category">Refrigerio</span>
+                        <h5>Refrigerio Estándar</h5>
+                        <p class="text-muted small">Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.</p>
+                        <div class="product-price">$13.900 COP</div>
                     </div>
                 </div>
             </div>
-
-            <!-- PORTFOLIO ITEM 2 -->
-            <div class="col-lg-4 col-md-6 portfolio-item" data-category="app">
-                <div class="portfolio-card position-relative overflow-hidden rounded-3">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600" 
-                         alt="Project 2" class="img-fluid w-100">
-                    <div class="portfolio-overlay">
-                        <h5>Mobile Banking App</h5>
-                        <p class="text-muted">App Development</p>
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-link"></i> View Project</a>
+            <!-- Menú Básico -->
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="menu-basico">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/3.png" alt="Menú Básico" class="img-fluid w-100"></div>
+                    <div class="p-3">
+                        <span class="product-category">Menú Básico</span>
+                        <h5>Menú Wrap de Pollo</h5>
+                        <p class="text-muted small">Wrap de pollo teriyaki, Té 0% cal, fruta fresca de temporada.</p>
+                        <div class="product-price">$16.200 COP</div>
                     </div>
                 </div>
             </div>
-
-            <!-- PORTFOLIO ITEM 3 -->
-            <div class="col-lg-4 col-md-6 portfolio-item" data-category="marketing">
-                <div class="portfolio-card position-relative overflow-hidden rounded-3">
-                    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=600" 
-                         alt="Project 3" class="img-fluid w-100">
-                    <div class="portfolio-overlay">
-                        <h5>Social Media Campaign</h5>
-                        <p class="text-muted">Marketing</p>
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-link"></i> View Project</a>
+            <!-- Brunch -->
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="brunch">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/4.png" alt="Brunch" class="img-fluid w-100"></div>
+                    <div class="p-3">
+                        <span class="product-category">Brunch</span>
+                        <h5>Brunch con Parfait</h5>
+                        <p class="text-muted small">Parfait 8 onzas con yogurt, fruta natural y granola. Té 0% cal. Tostadas artesanales.</p>
+                        <div class="product-price">$20.700 COP</div>
                     </div>
                 </div>
             </div>
-
-            <!-- PORTFOLIO ITEM 4 -->
-            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-                <div class="portfolio-card position-relative overflow-hidden rounded-3">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600" 
-                         alt="Project 4" class="img-fluid w-100">
-                    <div class="portfolio-overlay">
-                        <h5>Analytics Dashboard</h5>
-                        <p class="text-muted">Web Design</p>
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-link"></i> View Project</a>
+            <!-- Desayuno Delicioso -->
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="desayuno">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/5.png" alt="Desayuno Delicioso" class="img-fluid w-100"></div>
+                    <div class="p-3">
+                        <span class="product-category">Desayuno</span>
+                        <h5>Desayuno Milanesa</h5>
+                        <p class="text-muted small">Milanesa de pollo, mix de lechuga y espinaca, tomate, salsa de la casa, jugo natural.</p>
+                        <div class="product-price">$23.600 COP</div>
                     </div>
                 </div>
             </div>
-
-            <!-- PORTFOLIO ITEM 5 -->
-            <div class="col-lg-4 col-md-6 portfolio-item" data-category="app">
-                <div class="portfolio-card position-relative overflow-hidden rounded-3">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?auto=format&fit=crop&w=600" 
-                         alt="Project 5" class="img-fluid w-100">
-                    <div class="portfolio-overlay">
-                        <h5>Fitness Tracker App</h5>
-                        <p class="text-muted">App Development</p>
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-link"></i> View Project</a>
+            <!-- Más productos -->
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="refrigerio">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/6.png" alt="Sanduche Mexicano" class="img-fluid w-100"></div>
+                    <div class="p-3">
+                        <span class="product-category">Refrigerio</span>
+                        <h5>Sanduche Mexicano</h5>
+                        <p class="text-muted small">Jamón ahumado, queso mozzarella, nachos, lechuga, tomate y salsa de guacamole.</p>
+                        <div class="product-price">$13.900 COP</div>
                     </div>
                 </div>
             </div>
-
-            <!-- PORTFOLIO ITEM 6 -->
-            <div class="col-lg-4 col-md-6 portfolio-item" data-category="marketing">
-                <div class="portfolio-card position-relative overflow-hidden rounded-3">
-                    <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=600" 
-                         alt="Project 6" class="img-fluid w-100">
-                    <div class="portfolio-overlay">
-                        <h5>Brand Identity</h5>
-                        <p class="text-muted">Marketing</p>
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-link"></i> View Project</a>
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="menu-basico">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/7.png" alt="Menú Frutta" class="img-fluid w-100"></div>
+                    <div class="p-3">
+                        <span class="product-category">Menú Básico</span>
+                        <h5>Menú Mix de Fruta</h5>
+                        <p class="text-muted small">Mix de fruta picada 8 onzas, mix de frutos secos, queso pera. Opción saludable.</p>
+                        <div class="product-price">$16.200 COP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="brunch">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/8.png" alt="Omelette" class="img-fluid w-100"></div>
+                    <div class="p-3">
+                        <span class="product-category">Brunch</span>
+                        <h5>Omelette Premium</h5>
+                        <p class="text-muted small">Omelette con jamón ahumado y queso mozzarella, tostadas de frutos rojos, jugo natural.</p>
+                        <div class="product-price">$20.700 COP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="desayuno">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/9.png" alt="Tamal" class="img-fluid w-100"></div>
+                    <div class="p-3">
+                        <span class="product-category">Desayuno</span>
+                        <h5>Tamal Tradicional</h5>
+                        <p class="text-muted small">Tamal con trozos de pollo y tocino, jugo néctar o chocolate, arepa blanca y pan.</p>
+                        <div class="product-price">$23.600 COP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="desayuno">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/10.png" alt="Wrap Milanesa" class="img-fluid w-100"></div>
+                    <div class="p-3">
+                        <span class="product-category">Desayuno</span>
+                        <h5>Wrap de Milanesa</h5>
+                        <p class="text-muted small">Wrap de milanesa de pollo apanado, Té 0% cal, mix de fruta 8 onzas, barra de granola.</p>
+                        <div class="product-price">$23.600 COP</div>
                     </div>
                 </div>
             </div>
@@ -356,266 +279,115 @@
     </div>
 </section>
 
-<!-- ================================================
-     TEAM SECTION
-     CUSTOMIZATION: Change team member photos, names, and positions
-=============================================== -->
-<section id="team" class="py-5 bg-light">
+<!-- GALERÍA -->
+<section id="galeria" class="py-5 bg-light">
     <div class="container py-5">
         <div class="text-center mb-5">
-            <h6 class="text-primary fw-bold text-uppercase">Our Team</h6>
-            <h2>Meet Our Experts</h2>
-            <p class="text-muted mx-auto" style="max-width: 600px;">
-                Our talented team members are dedicated to delivering excellence
-            </p>
+            <h6 class="text-primary fw-bold text-uppercase">Nuestra Galería</h6>
+            <h2>Fotos de Nuestros Productos</h2>
         </div>
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-4 col-6"><img src="Fotos Editadas Mazarino/11.png" alt="Producto 11" class="img-fluid rounded-3 shadow-sm" style="height:200px;object-fit:cover;width:100%"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img src="Fotos Editadas Mazarino/12.png" alt="Producto 12" class="img-fluid rounded-3 shadow-sm" style="height:200px;object-fit:cover;width:100%"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img src="Fotos Editadas Mazarino/13.png" alt="Producto 13" class="img-fluid rounded-3 shadow-sm" style="height:200px;object-fit:cover;width:100%"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img src="Fotos Editadas Mazarino/14.png" alt="Producto 14" class="img-fluid rounded-3 shadow-sm" style="height:200px;object-fit:cover;width:100%"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img src="Fotos Editadas Mazarino/15.png" alt="Producto 15" class="img-fluid rounded-3 shadow-sm" style="height:200px;object-fit:cover;width:100%"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img src="Fotos Editadas Mazarino/16.png" alt="Producto 16" class="img-fluid rounded-3 shadow-sm" style="height:200px;object-fit:cover;width:100%"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img src="Fotos Editadas Mazarino/17.png" alt="Producto 17" class="img-fluid rounded-3 shadow-sm" style="height:200px;object-fit:cover;width:100%"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img src="Fotos Editadas Mazarino/1.png" alt="Producto 1" class="img-fluid rounded-3 shadow-sm" style="height:200px;object-fit:cover;width:100%"></div>
+        </div>
+    </div>
+</section>
 
+<!-- INFO IMPORTANTE -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase">Información Importante</h6>
+            <h2>Para Tener en Cuenta</h2>
+        </div>
         <div class="row g-4">
-            <!-- TEAM MEMBER 1 - CUSTOMIZE: photo, name, position, social links -->
-            <div class="col-lg-3 col-md-6">
-                <div class="team-card bg-white rounded-3 shadow-sm text-center p-4">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300" 
-                         alt="John Doe" class="team-img rounded-circle mb-3">
-                    <h5>John Doe</h5>
-                    <p class="text-muted mb-3">CEO & Founder</p>
-                    <div class="social-links">
-                        <a href="#" class="me-2"><i class="fab fa-facebook text-primary"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-twitter text-primary"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-linkedin text-primary"></i></a>
-                    </div>
+            <div class="col-md-6">
+                <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                    <h5><i class="fas fa-box-open text-primary me-2"></i> Pedido Mínimo</h5>
+                    <p class="text-muted">El pedido mínimo es de <strong>15 unidades</strong> por referencia. Contáctanos para pedidos más grandes.</p>
                 </div>
             </div>
-
-            <!-- TEAM MEMBER 2 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="team-card bg-white rounded-3 shadow-sm text-center p-4">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&h=300" 
-                         alt="Jane Smith" class="team-img rounded-circle mb-3">
-                    <h5>Jane Smith</h5>
-                    <p class="text-muted mb-3">Creative Director</p>
-                    <div class="social-links">
-                        <a href="#" class="me-2"><i class="fab fa-facebook text-primary"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-twitter text-primary"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-linkedin text-primary"></i></a>
-                    </div>
+            <div class="col-md-6">
+                <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                    <h5><i class="fas fa-truck text-primary me-2"></i> Entregas</h5>
+                    <p class="text-muted">Las entregas se realizan en un único punto dentro de Bogotá y su zona periférica. El costo de envío no está incluido.</p>
                 </div>
             </div>
-
-            <!-- TEAM MEMBER 3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="team-card bg-white rounded-3 shadow-sm text-center p-4">
-                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&h=300" 
-                         alt="Mike Johnson" class="team-img rounded-circle mb-3">
-                    <h5>Mike Johnson</h5>
-                    <p class="text-muted mb-3">Lead Developer</p>
-                    <div class="social-links">
-                        <a href="#" class="me-2"><i class="fab fa-facebook text-primary"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-github text-primary"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-linkedin text-primary"></i></a>
-                    </div>
+            <div class="col-md-6">
+                <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                    <h5><i class="fas fa-calendar text-primary me-2"></i> Anticipación</h5>
+                    <p class="text-muted">Agradecemos realizar su pedido con un mínimo de <strong>3 días de anticipación</strong> al evento. Para tiempos más cortos, confirmar disponibilidad previamente.</p>
                 </div>
             </div>
-
-            <!-- TEAM MEMBER 4 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="team-card bg-white rounded-3 shadow-sm text-center p-4">
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300&h=300" 
-                         alt="Emily Davis" class="team-img rounded-circle mb-3">
-                    <h5>Emily Davis</h5>
-                    <p class="text-muted mb-3">Marketing Manager</p>
-                    <div class="social-links">
-                        <a href="#" class="me-2"><i class="fab fa-facebook text-primary"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-instagram text-primary"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-linkedin text-primary"></i></a>
-                    </div>
+            <div class="col-md-6">
+                <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                    <h5><i class="fas fa-clock text-primary me-2"></i> Disponibilidad</h5>
+                    <p class="text-muted">Las entregas están disponibles los <strong>365 días del año, las 24 horas</strong>, sujetas a programación previa.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ================================================
-     TESTIMONIALS SECTION
-     CUSTOMIZATION: Change customer testimonials
-=============================================== -->
-<section id="testimonials" class="py-5">
+<!-- CONTACTO -->
+<section id="contacto" class="py-5 bg-light">
     <div class="container py-5">
         <div class="text-center mb-5">
-            <h6 class="text-primary fw-bold text-uppercase">Testimonials</h6>
-            <h2>What Our Clients Say</h2>
+            <h6 class="text-primary fw-bold text-uppercase">Contáctanos</h6>
+            <h2>Haz tu Pedido</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">¿Tienes una reunión o evento? ¡Escríbenos y cotiza ahora!</p>
         </div>
-
         <div class="row g-4">
-            <!-- TESTIMONIAL 1 -->
-            <div class="col-lg-4">
-                <div class="testimonial-card bg-white p-4 rounded-3 shadow-sm h-100">
-                    <div class="mb-3">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                    </div>
-                    <p class="text-muted mb-4">
-                        "Excellent service! The team was professional and delivered beyond our expectations. 
-                        Highly recommended for any business needs."
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&h=100" 
-                             alt="Client" class="rounded-circle me-3" style="width:50px;height:50px;object-fit:cover;">
-                        <div>
-                            <h6 class="mb-0">Robert Wilson</h6>
-                            <small class="text-muted">CEO, TechCorp</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TESTIMONIAL 2 -->
-            <div class="col-lg-4">
-                <div class="testimonial-card bg-white p-4 rounded-3 shadow-sm h-100">
-                    <div class="mb-3">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                    </div>
-                    <p class="text-muted mb-4">
-                        "Working with this company was a game-changer for our business. 
-                        Their innovative solutions helped us increase our revenue significantly."
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&h=100" 
-                             alt="Client" class="rounded-circle me-3" style="width:50px;height:50px;object-fit:cover;">
-                        <div>
-                            <h6 class="mb-0">Sarah Anderson</h6>
-                            <small class="text-muted">Director, GrowthInc</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TESTIMONIAL 3 -->
-            <div class="col-lg-4">
-                <div class="testimonial-card bg-white p-4 rounded-3 shadow-sm h-100">
-                    <div class="mb-3">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half-alt text-warning"></i>
-                    </div>
-                    <p class="text-muted mb-4">
-                        "The quality of work and attention to detail is outstanding. 
-                        They truly understand what clients need and deliver exceptional results."
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100" 
-                             alt="Client" class="rounded-circle me-3" style="width:50px;height:50px;object-fit:cover;">
-                        <div>
-                            <h6 class="mb-0">David Martinez</h6>
-                            <small class="text-muted">Founder, StartUp Hub</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================================================
-     CONTACT SECTION
-     CUSTOMIZATION: Change contact info, email, phone, address
-=============================================== -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h6 class="text-primary fw-bold text-uppercase">Get In Touch</h6>
-            <h2>Contact Us</h2>
-            <p class="text-muted mx-auto" style="max-width: 600px;">
-                Have a question or want to work together? We'd love to hear from you!
-            </p>
-        </div>
-
-        <div class="row g-4">
-            <!-- Contact Info -->
             <div class="col-lg-4">
                 <div class="contact-info bg-white p-4 rounded-3 shadow-sm h-100">
-                    <h4 class="mb-4">Contact Information</h4>
-                    
-                    <!-- CUSTOMIZE: Your address -->
+                    <h4 class="mb-4">Información de Contacto</h4>
                     <div class="d-flex mb-4">
-                        <div class="me-3">
-                            <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
-                        </div>
-                        <div>
-                            <h6>Address</h6>
-                            <p class="text-muted">123 Business Street<br>Suite 100, City, Country</p>
-                        </div>
+                        <div class="me-3"><i class="fas fa-phone fa-2x text-primary"></i></div>
+                        <div><h6>Teléfono</h6><p class="text-muted">312 500 2080 / 601 527 5255</p></div>
                     </div>
-
-                    <!-- CUSTOMIZE: Your phone -->
                     <div class="d-flex mb-4">
-                        <div class="me-3">
-                            <i class="fas fa-phone fa-2x text-primary"></i>
-                        </div>
-                        <div>
-                            <h6>Phone</h6>
-                            <p class="text-muted">+1 (555) 123-4567</p>
-                        </div>
+                        <div class="me-3"><i class="fas fa-envelope fa-2x text-primary"></i></div>
+                        <div><h6>Correo Electrónico</h6><p class="text-muted">artemanualmazarino@hotmail.com</p></div>
                     </div>
-
-                    <!-- CUSTOMIZE: Your email -->
-                    <div class="d-flex mb-4">
-                        <div class="me-3">
-                            <i class="fas fa-envelope fa-2x text-primary"></i>
-                        </div>
-                        <div>
-                            <h6>Email</h6>
-                            <p class="text-muted">info@yourcompany.com</p>
-                        </div>
-                    </div>
-
-                    <!-- CUSTOMIZE: Your working hours -->
                     <div class="d-flex">
-                        <div class="me-3">
-                            <i class="fas fa-clock fa-2x text-primary"></i>
-                        </div>
-                        <div>
-                            <h6>Working Hours</h6>
-                            <p class="text-muted">Mon - Fri: 9:00 AM - 6:00 PM</p>
-                        </div>
+                        <div class="me-3"><i class="fas fa-map-marker-alt fa-2x text-primary"></i></div>
+                        <div><h6>Cobertura</h6><p class="text-muted">Bogotá D.C. y zona periférica</p></div>
                     </div>
                 </div>
             </div>
-
-            <!-- Contact Form -->
             <div class="col-lg-8">
                 <div class="contact-form bg-white p-4 rounded-3 shadow-sm">
-                    <h4 class="mb-4">Send Us a Message</h4>
+                    <h4 class="mb-4">Envíanos un Mensaje</h4>
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label for="name" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                                <label for="name" class="form-label">Tu Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="María García" required>
                             </div>
                             <div class="col-md-6">
-                                <label for="email" class="form-label">Your Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                                <label for="email" class="form-label">Tu Correo</label>
+                                <input type="email" class="form-control" id="email" placeholder="maria@empresa.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="310 123 4567">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="units" class="form-label">Número de Personas</label>
+                                <input type="number" class="form-control" id="units" placeholder="20" min="15">
                             </div>
                             <div class="col-12">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject" placeholder="How can we help?" required>
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Cuéntanos sobre tu evento: tipo de refrigerio, fecha, hora de entrega..." required></textarea>
                             </div>
                             <div class="col-12">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary px-4 py-2">
-                                    <i class="fas fa-paper-plane me-2"></i>Send Message
-                                </button>
+                                <button type="submit" class="btn btn-primary px-4 py-2"><i class="fas fa-paper-plane me-2"></i>Enviar Mensaje</button>
                             </div>
                         </div>
                     </form>
@@ -625,100 +397,73 @@
     </div>
 </section>
 
-<!-- ================================================
-     FOOTER SECTION
-     CUSTOMIZE: Company info, social links, quick links
-=============================================== -->
+<!-- FOOTER -->
 <footer class="bg-dark text-white py-5">
     <div class="container">
         <div class="row g-4">
-            <!-- Footer Column 1: Company Info -->
             <div class="col-lg-4 col-md-6">
-                <h5 class="mb-3">
-                    <i class="fas fa-building me-2"></i>YourCompany
-                </h5>
-                <p class="text-white-50">
-                    We are dedicated to providing the best solutions for our clients. 
-                    Your success is our priority.
-                </p>
+                <h5 class="mb-3"><img src="MainLogo.png" alt="Mazarino" style="height:40px; margin-right:10px;">Arte Manual Mazarino</h5>
+                <p class="text-white-50">Especialistas en refrigerios, brunch y desayunos empresariales en Bogotá. Cuidamos cada detalle para que tu evento sea un éxito.</p>
                 <div class="social-links mt-3">
-                    <!-- CUSTOMIZE: Your social media links -->
                     <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
                     <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="https://wa.me/573125002080" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="mailto:artemanualmazarino@hotmail.com" class="text-white"><i class="fas fa-envelope fa-lg"></i></a>
                 </div>
             </div>
-
-            <!-- Footer Column 2: Quick Links -->
             <div class="col-lg-2 col-md-6">
-                <h5 class="mb-3">Quick Links</h5>
+                <h5 class="mb-3">Enlaces</h5>
                 <ul class="list-unstyled">
-                    <!-- CUSTOMIZE: Footer navigation links -->
-                    <li class="mb-2"><a href="#home" class="text-white-50 text-decoration-none">Home</a></li>
-                    <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none">About Us</a></li>
-                    <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none">Services</a></li>
-                    <li class="mb-2"><a href="#portfolio" class="text-white-50 text-decoration-none">Portfolio</a></li>
-                    <li class="mb-2"><a href="#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                    <li class="mb-2"><a href="#inicio" class="text-white-50 text-decoration-none">Inicio</a></li>
+                    <li class="mb-2"><a href="#nosotros" class="text-white-50 text-decoration-none">Nosotros</a></li>
+                    <li class="mb-2"><a href="#servicios" class="text-white-50 text-decoration-none">Servicios</a></li>
+                    <li class="mb-2"><a href="#menu" class="text-white-50 text-decoration-none">Menú</a></li>
+                    <li class="mb-2"><a href="#contacto" class="text-white-50 text-decoration-none">Contacto</a></li>
                 </ul>
             </div>
-
-            <!-- Footer Column 3: Services -->
             <div class="col-lg-3 col-md-6">
-                <h5 class="mb-3">Our Services</h5>
+                <h5 class="mb-3">Servicios</h5>
                 <ul class="list-unstyled">
-                    <!-- CUSTOMIZE: Your service list in footer -->
-                    <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Web Development</a></li>
-                    <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Mobile Apps</a></li>
-                    <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Digital Marketing</a></li>
-                    <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">UI/UX Design</a></li>
-                    <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Cloud Solutions</a></li>
+                    <li class="mb-2"><a href="#menu" class="text-white-50 text-decoration-none">Refrigerios Estándar</a></li>
+                    <li class="mb-2"><a href="#menu" class="text-white-50 text-decoration-none">Menús Básicos</a></li>
+                    <li class="mb-2"><a href="#menu" class="text-white-50 text-decoration-none">Brunch Empresarial</a></li>
+                    <li class="mb-2"><a href="#menu" class="text-white-50 text-decoration-none">Desayunos Deliciosos</a></li>
+                    <li class="mb-2"><a href="#contacto" class="text-white-50 text-decoration-none">Eventos Personalizados</a></li>
                 </ul>
             </div>
-
-            <!-- Footer Column 4: Newsletter -->
             <div class="col-lg-3 col-md-6">
-                <h5 class="mb-3">Newsletter</h5>
-                <p class="text-white-50">Subscribe to get the latest news and updates.</p>
+                <h5 class="mb-3">Boletín</h5>
+                <p class="text-white-50">Suscríbete para recibir promociones y novedades.</p>
                 <form class="mt-3">
                     <div class="input-group">
-                        <!-- CUSTOMIZE: Change email placeholder -->
-                        <input type="email" class="form-control" placeholder="Your email">
-                        <button class="btn btn-primary" type="submit">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
+                        <input type="email" class="form-control" placeholder="Tu correo">
+                        <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
                     </div>
                 </form>
             </div>
         </div>
-
-        <!-- Copyright -->
         <hr class="my-4 border-secondary">
         <div class="row">
             <div class="col-md-6 text-center text-md-start">
-                <!-- CUSTOMIZE: Your name/company and year -->
-                <p class="mb-0 text-white-50">&copy; 2024 YourCompany. All Rights Reserved.</p>
+                <p class="mb-0 text-white-50">&copy; 2025 Arte Manual Mazarino. Todos los derechos reservados.</p>
             </div>
             <div class="col-md-6 text-center text-md-end">
-                <!-- CUSTOMIZE: Privacy policy and terms links -->
-                <p class="mb-0 text-white-50">
-                    <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
-                    <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
-                </p>
+                <p class="mb-0 text-white-50">Cuidamos cada detalle ❤️</p>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- Back to Top Button -->
-<a href="#home" class="back-to-top">
-    <i class="fas fa-arrow-up"></i>
+<!-- WhatsApp Flotante -->
+<a href="https://wa.me/573125002080?text=Hola%20Mazarino,%20me%20interesa%20cotizar%20refrigerios%20para%20mi%20empresa" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
 </a>
+
+<!-- Botón Volver Arriba -->
+<a href="#inicio" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
 <!-- Bootstrap 5 JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom JavaScript -->
 <script src="js/script.js"></script>
 </body>
 </html>
