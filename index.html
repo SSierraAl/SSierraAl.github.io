@@ -8,7 +8,7 @@
     <title>Mazarino | Refrigerios & Brunch Empresarial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet"/>
 </head>
 <body>
@@ -18,7 +18,7 @@
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#inicio">
             <img src="MainLogo.png" alt="Mazarino Logo" style="height: 45px; margin-right: 10px;">
-            Mazarino
+            Arte Manual Mazarino
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -26,6 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#fundadoras">Fundadoras</a></li>
                 <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                 <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
@@ -36,23 +37,81 @@
     </div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO con Video -->
 <section id="inicio" class="hero-section">
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="row min-vh-100 align-items-center">
-            <div class="col-lg-8 text-white">
+            <div class="col-lg-7 text-white">
                 <img src="SloganMazarino.png" alt="Cuidamos cada detalle" style="max-width: 350px; margin-bottom: 30px;">
-                <h1 class="display-3 fw-bold mb-4">Refrigerios & Brunch Empresarial</h1>
+                <h1 class="display-3 fw-bold mb-4" style="font-family: 'Dancing Script', cursive;">Refrigerios & Brunch Empresarial</h1>
                 <p class="lead mb-4 fs-4">Soluciones gastronómicas frescas, equilibradas y presentadas con excelencia para reuniones, capacitaciones, eventos corporativos y oficinas en Bogotá.</p>
                 <div class="d-flex gap-3">
                     <a href="#menu" class="btn btn-light btn-lg px-4 py-2">Ver Menú</a>
                     <a href="#contacto" class="btn btn-outline-light btn-lg px-4 py-2">Cotizar Ahora</a>
                 </div>
             </div>
+            <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center">
+                <video class="hero-video" autoplay loop muted playsinline>
+                    <source src="MainVideo.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
-    <a href="#nosotros" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+    <a href="#fundadoras" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+</section>
+
+<!-- FUNDADORAS -->
+<section id="fundadoras" class="py-5 bg-light">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase">Nuestras Fundadoras</h6>
+            <h2 style="font-family: 'Dancing Script', cursive;">La Historia Detrás de Mazarino</h2>
+            <p class="text-muted mx-auto" style="max-width: 700px;">
+                Conoce a las mujeres que soñaron con cuidar cada detalle de tus eventos corporativos
+            </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="founder-card bg-white rounded-3 shadow-sm p-4 text-center h-100">
+                    <img src="" alt="Fundadora 1" class="founder-img rounded-circle mb-3 mx-auto">
+                    <h5 class="mb-1">Nombre Fundadora 1</h5>
+                    <p class="text-primary mb-3">Cofundadora & CEO</p>
+                    <p class="text-muted">
+                        "Siempre creí que una buena reunión empieza con buenos refrigerios.
+                        Mazarino nació de la pasión por la gastronomía y el deseo de ofrecer
+                        algo diferente: productos frescos, presentados con amor y entregados a tiempo."
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+                <div class="founder-card bg-white rounded-3 shadow-sm p-4 text-center h-100">
+                    <img src="" alt="Fundadora 2" class="founder-img rounded-circle mb-3 mx-auto">
+                    <h5 class="mb-1">Nombre Fundadora 2</h5>
+                    <p class="text-primary mb-3">Cofundadora & Creativa</p>
+                    <p class="text-muted">
+                        "La idea de Arte Manual Mazarino surgió de ver la necesidad de las
+                        empresas bogotanas: refrigerios que no fueran lo mismo de siempre.
+                        Queremos que cada bocado cuente una historia de calidad y detalle."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="p-4 bg-white rounded-3 shadow-sm">
+                    <h5 class="text-center text-primary mb-3" style="font-family: 'Dancing Script', cursive;"><i class="fas fa-heart me-2"></i>Nuestra Misión</h5>
+                    <p class="text-muted text-center">
+                        Transformar la experiencia de los eventos corporativos a través de la gastronomía artesanal.
+                        En Mazarino no solo preparamos refrigerios: creamos momentos que unen equipos,
+                        inspiran conversaciones y hacen que cada reunión sea especial.
+                        Cuidamos cada ingrediente, cada presentación y cada entrega, porque sabemos que
+                        los detalles hacen la diferencia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- NOSOTROS -->
@@ -64,7 +123,7 @@
             </div>
             <div class="col-lg-6">
                 <h6 class="text-primary fw-bold text-uppercase">Sobre Nosotros</h6>
-                <h2 class="mb-4">Cuidamos Cada Detalle de tu Evento</h2>
+                <h2>Cuidamos Cada Detalle de tu Evento</h2>
                 <p class="text-muted mb-4">En Mazarino creemos que una buena reunión se construye desde los detalles más pequeños. Nos especializamos en la preparación y entrega de refrigerios y brunch de alta calidad para empresas, cuidando cada ingrediente, la presentación y la puntualidad.</p>
                 <p class="text-muted mb-4">Ofrecemos opciones variadas, saludables y deliciosas que se adapten a las necesidades de tu equipo: desde refrigerios estándar hasta desayunos completos y brunch ejecutivos. Todo preparado con ingredientes frescos, empaques individuales o grupales, y entregas en Bogotá y zona periférica los 365 días del año.</p>
                 <div class="row mt-4">
@@ -171,7 +230,6 @@
             <button class="btn btn-outline-primary m-1" data-filter="desayuno">Desayunos</button>
         </div>
         <div class="row g-4">
-            <!-- Refrigerio Estándar -->
             <div class="col-lg-4 col-md-6 portfolio-item" data-category="refrigerio">
                 <div class="product-card bg-white rounded-3 shadow-sm h-100">
                     <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/2.png" alt="Refrigerio Estándar" class="img-fluid w-100"></div>
@@ -183,7 +241,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Menú Básico -->
             <div class="col-lg-4 col-md-6 portfolio-item" data-category="menu-basico">
                 <div class="product-card bg-white rounded-3 shadow-sm h-100">
                     <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/3.png" alt="Menú Básico" class="img-fluid w-100"></div>
@@ -195,7 +252,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Brunch -->
             <div class="col-lg-4 col-md-6 portfolio-item" data-category="brunch">
                 <div class="product-card bg-white rounded-3 shadow-sm h-100">
                     <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/4.png" alt="Brunch" class="img-fluid w-100"></div>
@@ -207,7 +263,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Desayuno Delicioso -->
             <div class="col-lg-4 col-md-6 portfolio-item" data-category="desayuno">
                 <div class="product-card bg-white rounded-3 shadow-sm h-100">
                     <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/5.png" alt="Desayuno Delicioso" class="img-fluid w-100"></div>
@@ -219,7 +274,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Más productos -->
             <div class="col-lg-4 col-md-6 portfolio-item" data-category="refrigerio">
                 <div class="product-card bg-white rounded-3 shadow-sm h-100">
                     <div class="overflow-hidden"><img src="Fotos Editadas Mazarino/6.png" alt="Sanduche Mexicano" class="img-fluid w-100"></div>
@@ -355,9 +409,13 @@
                         <div class="me-3"><i class="fas fa-envelope fa-2x text-primary"></i></div>
                         <div><h6>Correo Electrónico</h6><p class="text-muted">artemanualmazarino@hotmail.com</p></div>
                     </div>
+                    <div class="d-flex mb-4">
+                        <div class="me-3"><i class="fab fa-instagram fa-2x text-primary"></i></div>
+                        <div><h6>Instagram</h6><p class="text-muted"><a href="https://www.instagram.com/artemanualmazarino" target="_blank">@artemanualmazarino</a></p></div>
+                    </div>
                     <div class="d-flex">
-                        <div class="me-3"><i class="fas fa-map-marker-alt fa-2x text-primary"></i></div>
-                        <div><h6>Cobertura</h6><p class="text-muted">Bogotá D.C. y zona periférica</p></div>
+                        <div class="me-3"><i class="fab fa-facebook fa-2x text-primary"></i></div>
+                        <div><h6>Facebook</h6><p class="text-muted"><a href="https://www.facebook.com/share/1cGVwYka3q/" target="_blank">Arte Manual Mazarino</a></p></div>
                     </div>
                 </div>
             </div>
@@ -405,16 +463,17 @@
                 <h5 class="mb-3"><img src="MainLogo.png" alt="Mazarino" style="height:40px; margin-right:10px;">Arte Manual Mazarino</h5>
                 <p class="text-white-50">Especialistas en refrigerios, brunch y desayunos empresariales en Bogotá. Cuidamos cada detalle para que tu evento sea un éxito.</p>
                 <div class="social-links mt-3">
-                    <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="https://wa.me/573125002080" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
-                    <a href="mailto:artemanualmazarino@hotmail.com" class="text-white"><i class="fas fa-envelope fa-lg"></i></a>
+                    <a href="https://www.facebook.com/share/1cGVwYka3q/" target="_blank" class="text-white me-3" title="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://www.instagram.com/artemanualmazarino?igsh=MWc4c3l6cDFoZHZyNg==" target="_blank" class="text-white me-3" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://wa.me/573125002080" target="_blank" class="text-white me-3" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="mailto:artemanualmazarino@hotmail.com" class="text-white" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">
                 <h5 class="mb-3">Enlaces</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2"><a href="#inicio" class="text-white-50 text-decoration-none">Inicio</a></li>
+                    <li class="mb-2"><a href="#fundadoras" class="text-white-50 text-decoration-none">Fundadoras</a></li>
                     <li class="mb-2"><a href="#nosotros" class="text-white-50 text-decoration-none">Nosotros</a></li>
                     <li class="mb-2"><a href="#servicios" class="text-white-50 text-decoration-none">Servicios</a></li>
                     <li class="mb-2"><a href="#menu" class="text-white-50 text-decoration-none">Menú</a></li>
@@ -462,7 +521,6 @@
 <!-- Botón Volver Arriba -->
 <a href="#inicio" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-<!-- Bootstrap 5 JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
