@@ -67,7 +67,7 @@
     "estadisticas": [
       { "numero": "500+", "descripcion": "Eventos Atendidos" },
       { "numero": "365", "descripcion": "Días de Entrega" },
-      { "numero": "50+", "descripcion": "Empresas Confían" },
+      { "numero": "20+", "descripcion": "Empresas Confían" },
       { "numero": "100%", "descripcion": "Ingredientes Frescos" }
     ]
   },
@@ -285,7 +285,7 @@
     ],
     "mision": {
       "titulo": "Nuestra Misión",
-      "texto": "Transformar la experiencia de los eventos corporativos a través de la gastronomía artesanal. En Mazarino no solo preparamos refrigerios: creamos momentos que unen equipos, inspiran conversaciones y hacen que cada reunión sea especial. Cuidamos cada ingrediente, cada presentación y cada entrega, porque sabemos que los detalles hacen la diferencia."
+      "texto": "Transformar "
     }
   },
 
@@ -316,7 +316,7 @@
     },
     "whatsapp": {
       "numero": "573125002080",
-      "mensaje_predeterminado": "Hola Mazarino, me interesa cotizar refrigerios para mi empresa"
+      "mensaje_predeterminado": "Cordial saludo, me interesa cotizar refrigerios para un evento en mi empresa"
     }
   },
 
