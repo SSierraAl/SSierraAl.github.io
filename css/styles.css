@@ -187,8 +187,8 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    /* PERSONALIZAR: Degradado diagonal - BLANCO arriba izquierda, púrpura oscuro abajo derecha */
-    background: linear-gradient(45deg, #ffffff 0%, rgba(106, 8, 40, 0.7) 50%, rgba(173, 31, 74, 0.95) 100%);
+    /* Degradado: púrpura → BLANCO en SUPERIOR DERECHA (135deg = bottom-left a top-right) */
+    background: linear-gradient(135deg, rgba(173, 31, 74, 0.95) 0%, rgba(106, 8, 40, 0.7) 50%, #ffffff 100%);
     z-index: 1;
 }
 
