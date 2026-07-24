@@ -15,11 +15,19 @@
     VARIABLES CSS - PERSONALIZA AQUÍ
     ===================================================== */
 :root {
+<<<<<<< HEAD
     /* COLORES PRINCIPALES - Paleta Púrpura */
     --primary-color: #ad1f4a;        /* Púrpura - color principal */
     --primary-dark: #6a0828;         /* Púrpura oscuro para hover */
     --primary-light: #f2c5e0;        /* Rosa claro para fondos */
     --accent-color: #d43790;         /* Rosa vibrante para acentos */
+=======
+    /* COLORES PRINCIPALES - Paleta Petal Party */
+    --primary-color: #ad1f4a;        /* Burgundy - color principal */
+    --primary-dark: #6a0828;         /* Burgundy oscuro para hover */
+    --primary-light: #f2c5e0;        /* Hot Pink claro para fondos */
+    --accent-color: #d43790;         /* Pink vibrante para acentos */
+>>>>>>> 5445347 (Update_new_version)
     --accent-light: #ec8fd0;         /* Magenta suave */
 
     /* COLORES DE TEXTO */
