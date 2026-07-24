@@ -12,22 +12,8 @@
 (function () {
     'use strict';
 
-    let siteConfig = null;
-
-    // ====================================================
-    // Cargar configuración desde config.json
-    // ====================================================
-    async function loadConfig() {
-        try {
-            const response = await fetch('config.json');
-            if (!response.ok) throw new Error('No se pudo cargar config.json');
-            siteConfig = await response.json();
-            applyAllConfig();
-            console.log('[ConfigLoader] Configuración aplicada correctamente.');
-        } catch (error) {
-            console.error('[ConfigLoader] Error:', error);
-        }
-    }
+    // Usar configuración embebida desde site-config.js
+    var siteConfig = typeof siteConfigData !== 'undefined' ? siteConfigData : null;
 
     // ====================================================
     // Aplicar toda la configuración
@@ -648,10 +634,19 @@
     // ====================================================
     // INICIAR cuando DOM esté listo
     // ====================================================
+    function initLoader() {
+        if (siteConfig) {
+            applyAllConfig();
+            console.log('[ConfigLoader] Configuración aplicada correctamente.');
+        } else {
+            console.error('[ConfigLoader] siteConfigData no encontrado.');
+        }
+    }
+
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadConfig);
+        document.addEventListener('DOMContentLoaded', initLoader);
     } else {
-        loadConfig();
+        initLoader();
     }
 
 })();
