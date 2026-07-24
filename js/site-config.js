@@ -13,15 +13,15 @@ var siteConfigData = {
 
   "COLORES": {
     "nota": "Variables CSS para personalizar colores. Usa códigos hex como #ad1f4a",
-    "primary_color": "#0066cc",
-    "primary_dark": "#004080",
-    "primary_light": "#cce0f5",
-    "accent_color": "#0077ea",
-    "accent_light": "#66aaff",
-    "text_dark": "#001a33",
-    "text_medium": "#334455",
-    "bg_light": "#eef4ff",
-    "bg_dark": "#001a33"
+    "primary_color": "#300915",
+    "primary_dark": "#6a0828",
+    "primary_light": "#f2c5e0",
+    "accent_color": "#d43790",
+    "accent_light": "#ec8fd0",
+    "text_dark": "#2d0a18",
+    "text_medium": "#6b4e5e",
+    "bg_light": "#fdf2f8",
+    "bg_dark": "#2d0a18"
   },
 
   "METADATA": {
