@@ -22,8 +22,7 @@
       { "texto": "Menú", "enlace": "#menu" },
       { "texto": "Info", "enlace": "#info" },
       { "texto": "Fundadoras", "enlace": "#fundadoras" },
-      { "texto": "Contacto", "enlace": "#contacto" },
-      { "texto": "Galería", "enlace": "#galeria" }
+      { "texto": "Contacto", "enlace": "#contacto" }
     ]
   },
 
@@ -48,19 +47,19 @@
     "nota": "Sección Sobre Nosotros",
     "titulo_pequeno": "Sobre Nosotros",
     "titulo_grande": "Cuidamos Cada Detalle de tu Evento",
-    "parrafo_1": "En Mazarino creemos que una buena reunión se construye desde los detalles más pequeños. Nos especializamos en la preparación y esdsd",
-    "parrafo_2": "Llevamos",
+    "parrafo_1": "En Mazarino creemos que una buena reunión se construye desde los detalles más pequeños. Nos especializamos en la preparación y entrega de refrigerios y brunch de alta calidad para empresas, cuidando cada ingrediente, la presentación y la puntualidad.",
+    "parrafo_2": "Llevamos 10 años siendo aliados estratégicos para las empresas, brindándoles opciones saludables, novedosas y ajustadas a las necesidades de nuestros clientes.",
     "imagen": {
       "src": "Fotos Editadas Mazarino/1.png",
       "alt": "Refrigerios Mazarino"
     },
     "valores_columna_1": [
-      "Calidad y Frescura",
-      "Atención al Detalle",
-      "Confianza y Puntualidad"
+      "Calidad y frescura",
+      "Atención al detalle",
+      "Confianza y puntualidad"
     ],
     "valores_columna_2": [
-      "Variedad de Opciones",
+      "Variedad de opciones",
       "Entregas 365 días",
       "Pedidos desde 15 unidades"
     ],
@@ -75,48 +74,48 @@
   "SERVICIOS": {
     "nota": "Tarjetas de servicios. Para añadir/eliminar, modifica el array",
     "titulo_pequeno": "Nuestros Servicios",
-    "titulo_grande": "Soluciones para Cada Occasión",
-    "descripcion": "Ofrecemos una amplia gama de opciones gastronómicas para empresas",
+    "titulo_grande": "Soluciones para cada ocasión",
+    "descripcion": "Ofrecemos una amplia gama de opciones gastronómicas para empresas y eventos corporativos y personales.",
     "servicios": [
       {
-        "icono": "fa-cookie-bite",
-        "titulo": "Refrigerios Estándar",
-        "descripcion": "Sanduches variados, bebidas y complementos. Perfectos para reuniones cortas. Desde $13.900 COP.",
-        "enlace_texto": "Ver Opciones",
-        "enlace": "#menu"
-      },
-      {
         "icono": "fa-utensils",
-        "titulo": "Menús Básicos",
-        "descripcion": "Combos completos con wrap o sanduche, jugo o té y fruta fresca. Desde $16.200 COP.",
+        "titulo": "Refrigerios Estándar",
+        "descripcion": "Sandwiches gourmet, bebidas y acompañamientos ideales para mantener la energía en todas tus reuniones y jornadas de trabajo.",
         "enlace_texto": "Ver Opciones",
         "enlace": "#menu"
       },
       {
-        "icono": "fa-coffee",
+        "icono": "fa-apple-whole",
+        "titulo": "Menús Básicos",
+        "descripcion": "Opciones balanceadas y adaptadas a tu presupuesto, diseñadas para deleitar con practicidad y sabor.",
+        "enlace_texto": "Ver Opciones",
+        "enlace": "#menu"
+      },
+      {
+        "icono": "fa-plate-wheat",
         "titulo": "Brunch Empresarial",
-        "descripcion": "Desayunos completos con omelletes, tamales, tostadas y más. Desde $20.700 COP.",
+        "descripcion": "Wraps, sandwiches artesanales, frutas frescas y bebidas. La combinación práctica y fresca ideal para la mitad de la mañana.",
+        "enlace_texto": "Ver Opciones",
+        "enlace": "#menu"
+      },
+      {
+        "icono": "fa-egg",
+        "titulo": "Desayunos Deliciosos",
+        "descripcion": "Desayunos completos, tradicionales y creativos con ingredientes seleccionados. El toque perfecto para iniciar un buen día.",
         "enlace_texto": "Ver Opciones",
         "enlace": "#menu"
       },
       {
         "icono": "fa-mug-hot",
-        "titulo": "Desayunos Deliciosos",
-        "descripcion": "Menús premium con milanesas, omelletes, tamales tradicionales. Desde $23.600 COP.",
-        "enlace_texto": "Ver Opciones",
-        "enlace": "#menu"
-      },
-      {
-        "icono": "fa-truck",
-        "titulo": "Entregas en Bogotá",
-        "descripcion": "Reparto en Bogotá D.C. y zona periférica. Disponible 365 días, las 24 horas.",
+        "titulo": "Estaciones de café",
+        "descripcion": "Servicio de montaje de stands de café y barras de bebidas y pasabocas pensadas para recargar energías, conectar y crear pausas de networking.",
         "enlace_texto": "Cotizar Envío",
         "enlace": "#contacto"
       },
       {
-        "icono": "fa-palette",
-        "titulo": "Eventos Personalizados",
-        "descripcion": "Adaptamos nuestros menús a tus necesidades. Opciones estándar, saludables y premium.",
+        "icono": "fa-cheese",
+        "titulo": "Pedidos Personalizados",
+        "descripcion": "Bandejas de frutas, tablas de quesos, anchetas corporativas y propuestas a la medida de tu evento (estándar, saludable o premium).",
         "enlace_texto": "Consultar",
         "enlace": "#contacto"
       }
@@ -126,15 +125,13 @@
   "MENU": {
     "nota": "Productos y precios. categorias define los botones de filtro",
     "titulo_pequeno": "Nuestro Menú",
-    "titulo_grande": "Productos y Precios",
-    "descripcion": "Todas nuestras opciones incluyen ingredientes frescos y presentación premium",
+    "titulo_grande": "Productos",
+    "descripcion": "Todas nuestras opciones incluyen ingredientes frescos y presentación premium. Para conocer todo nuestro portafolio, no dudes en escribirnos.",
     "categorias": [
       { "id": "all", "texto": "Todos" },
-      { "id": "refrigerio", "texto": "Refrigerios" },
-      { "id": "menu-basico", "texto": "Menús Básicos" },
-      { "id": "brunch", "texto": "Brunch" },
+      { "id": "refrigerio", "texto": "Refrigerios y Brunch" },
       { "id": "desayuno", "texto": "Desayunos" },
-      { "id": "estacion", "texto": "Estaciones de Café/Té" }
+      { "id": "estacion", "texto": "Estaciones de Café" }
     ],
     "productos": [
       {
@@ -142,23 +139,20 @@
         "etiqueta": "Refrigerio",
         "titulo": "Refrigerio Estándar",
         "descripcion": "Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.",
-        "precio": "$13.900 COP",
         "imagen": "Fotos Editadas Mazarino/2.png"
       },
       {
-        "categoria": "menu-basico",
+        "categoria": "refrigerio",
         "etiqueta": "Menú Básico",
         "titulo": "Menú Wrap de Pollo",
         "descripcion": "Wrap de pollo teriyaki, Té 0% cal, fruta fresca de temporada.",
-        "precio": "$16.200 COP",
         "imagen": "Fotos Editadas Mazarino/3.png"
       },
       {
-        "categoria": "brunch",
+        "categoria": "refrigerio",
         "etiqueta": "Brunch",
         "titulo": "Brunch con Parfait",
         "descripcion": "Parfait 8 onzas con yogurt, fruta natural y granola. Té 0% cal. Tostadas artesanales.",
-        "precio": "$20.700 COP",
         "imagen": "Fotos Editadas Mazarino/4.png"
       },
       {
@@ -166,7 +160,6 @@
         "etiqueta": "Desayuno",
         "titulo": "Desayuno Milanesa",
         "descripcion": "Milanesa de pollo, mix de lechuga y espinaca, tomate, salsa de la casa, jugo natural.",
-        "precio": "$23.600 COP",
         "imagen": "Fotos Editadas Mazarino/5.png"
       },
       {
@@ -174,23 +167,20 @@
         "etiqueta": "Refrigerio",
         "titulo": "Sanduche Mexicano",
         "descripcion": "Jamón ahumado, queso mozzarella, nachos, lechuga, tomate y salsa de guacamole.",
-        "precio": "$13.900 COP",
         "imagen": "Fotos Editadas Mazarino/6.png"
       },
       {
-        "categoria": "menu-basico",
+        "categoria": "refrigerio",
         "etiqueta": "Menú Básico",
         "titulo": "Menú Mix de Fruta",
         "descripcion": "Mix de fruta picada 8 onzas, mix de frutos secos, queso pera. Opción saludable.",
-        "precio": "$16.200 COP",
         "imagen": "Fotos Editadas Mazarino/7.png"
       },
       {
-        "categoria": "brunch",
+        "categoria": "refrigerio",
         "etiqueta": "Brunch",
         "titulo": "Omelette Premium",
         "descripcion": "Omelette con jamón ahumado y queso mozzarella, tostadas de frutos rojos, jugo natural.",
-        "precio": "$20.700 COP",
         "imagen": "Fotos Editadas Mazarino/8.png"
       },
       {
@@ -198,7 +188,6 @@
         "etiqueta": "Desayuno",
         "titulo": "Tamal Tradicional",
         "descripcion": "Tamal con trozos de pollo y tocino, jugo néctar o chocolate, arepa blanca y pan.",
-        "precio": "$23.600 COP",
         "imagen": "Fotos Editadas Mazarino/9.png"
       },
       {
@@ -206,7 +195,6 @@
         "etiqueta": "Desayuno",
         "titulo": "Wrap de Milanesa",
         "descripcion": "Wrap de milanesa de pollo apanado, Té 0% cal, mix de fruta 8 onzas, barra de granola.",
-        "precio": "$23.600 COP",
         "imagen": "Fotos Editadas Mazarino/10.png"
       },
       {
@@ -214,7 +202,6 @@
         "etiqueta": "Estación Café/Té",
         "titulo": "Estación de Café Premium",
         "descripcion": "Café de grano colombiano, café capuchino, complementos: canela, vainilla, edulcorante. Incluye thermos de 2L.",
-        "precio": "$35.000 COP",
         "imagen": "Fotos Editadas Mazarino/11.png"
       },
       {
@@ -222,7 +209,6 @@
         "etiqueta": "Estación Café/Té",
         "titulo": "Estación de Té Variado",
         "descripcion": "Selección de tés: verde, manzanilla, hibisco, menta. Incluye hervidor, azucarera y cucharas. Para 20 personas.",
-        "precio": "$28.000 COP",
         "imagen": "Fotos Editadas Mazarino/12.png"
       },
       {
@@ -230,7 +216,6 @@
         "etiqueta": "Estación Café/Té",
         "titulo": "Estación Combo Café y Té",
         "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
-        "precio": "$48.000 COP",
         "imagen": "Fotos Editadas Mazarino/13.png"
       }
     ]
@@ -268,17 +253,17 @@
     "nota": "Sección de las fundadoras del negocio",
     "titulo_pequeno": "Nuestras Fundadoras",
     "titulo_grande": "La Historia Detrás de Mazarino",
-    "descripcion": "Conoce a las mujeres que soñaron con cuidar cada detalle de tus eventos corporativos",
+    "descripcion": "Conoce a las mujeres que detras del cuidado de cada detalle de tus eventos corporativos",
     "fundadoras": [
       {
         "imagen": "founder1.png",
-        "nombre": "Nombre Fundadora 1",
+        "nombre": "Soraya",
         "cargo": "Cofundadora & CEO",
         "bio": "Siempre creí que una buena reunión empieza con buenos refrigerios. Mazarino nació de la pasión por la gastronomía y el deseo de ofrecer algo diferente: productos frescos, presentados con amor y entregados a tiempo."
       },
       {
         "imagen": "founder2.png",
-        "nombre": "Nombre Fundadora 2",
+        "nombre": "Erin Kristel",
         "cargo": "Cofundadora & Creativa",
         "bio": "La idea de Arte Manual Mazarino surgió de ver la necesidad de las empresas bogotanas: refrigerios que no fueran lo mismo de siempre. Queremos que cada bocado cuente una historia de calidad y detalle."
       }
@@ -320,21 +305,6 @@
     }
   },
 
-  "GALERIA": {
-    "nota": "Fotos de la galería. Añade o elimina URLs de imágenes",
-    "titulo_pequeno": "Nuestra Galería",
-    "titulo_grande": "Fotos de Nuestros Productos",
-    "fotos": [
-      { "src": "Fotos Editadas Mazarino/11.png", "alt": "Producto 11" },
-      { "src": "Fotos Editadas Mazarino/12.png", "alt": "Producto 12" },
-      { "src": "Fotos Editadas Mazarino/13.png", "alt": "Producto 13" },
-      { "src": "Fotos Editadas Mazarino/14.png", "alt": "Producto 14" },
-      { "src": "Fotos Editadas Mazarino/15.png", "alt": "Producto 15" },
-      { "src": "Fotos Editadas Mazarino/16.png", "alt": "Producto 16" },
-      { "src": "Fotos Editadas Mazarino/17.png", "alt": "Producto 17" },
-      { "src": "Fotos Editadas Mazarino/1.png", "alt": "Producto 1" }
-    ]
-  },
 
   "FOOTER": {
     "nota": "Pie de página",
@@ -375,7 +345,7 @@
 
   "COLORES": {
     "nota": "Variables CSS para personalizar colores. Usa códigos hex como #ad1f4a",
-    "primary_color": "#ad1f4a",
+    "primary_color": "#820f35",
     "primary_dark": "#6a0828",
     "primary_light": "#f2c5e0",
     "accent_color": "#d43790",

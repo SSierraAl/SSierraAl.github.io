@@ -334,16 +334,7 @@ Información de contacto y botón de WhatsApp.
 ### 10. GALERIA
 Fotos de la galería.
 
-```json
-"GALERIA": {
-    "titulo_pequeno": "Nuestra Galería",
-    "titulo_grande": "Fotos de Nuestros Productos",
-    "fotos": [
-        { "src": "Fotos Editadas Mazarino/11.png", "alt": "Descripción" },
-        { "src": "Fotos Editadas Mazarino/12.png", "alt": "Descripción" }
-    ]
-}
-```
+
 
 **Añadir una foto:**
 ```json
