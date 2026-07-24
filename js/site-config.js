@@ -13,7 +13,7 @@ var siteConfigData = {
 
   "COLORES": {
     "nota": "Variables CSS para personalizar colores. Usa códigos hex como #ad1f4a",
-    "primary_color": "#3b0f28",
+    "primary_color": "#ad1f4a",
     "primary_dark": "#6a0828",
     "primary_light": "#f2c5e0",
     "accent_color": "#d43790",
@@ -67,8 +67,7 @@ var siteConfigData = {
   "NOSOTROS": {
     "titulo_pequeno": "Sobre Nosotros",
     "titulo_grande": "Cuidamos Cada Detalle de tu Evento",
-    "parrafo_1": "En Mazarino creemos que una buena reunión se construye desde los detalles más pequeños. Nos especializamos en la preparación y entrega de refrigerios y brunch de alta calidad para empresas, cuidando cada ingrediente, la presentación y la puntualidad.",
-    "parrafo_2": "Llevamos 10 años siendo aliados estratégicos para las empresas, brindándoles opciones saludables, novedosas y ajustadas a las necesidades de nuestros clientes.",
+    "parrafo_1": "En Mazarino creemos que una buena reunión se construye desde los detalles más pequeños. Nos especializamos en la preparación y entrega de refrigerios y brunch de alta calidad para empresas, cuidando cada ingrediente, la presentación y la puntualidad. Llevamos 10 años siendo aliados estratégicos para las empresas, brindándoles opciones saludables, novedosas y ajustadas a las necesidades de nuestros clientes.",
     "imagen": {
       "src": "Fotos Editadas Mazarino/1.png",
       "alt": "Refrigerios Mazarino"
