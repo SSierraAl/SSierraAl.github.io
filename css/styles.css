@@ -15,19 +15,11 @@
     VARIABLES CSS - PERSONALIZA AQUÍ
     ===================================================== */
 :root {
-<<<<<<< HEAD
-    /* COLORES PRINCIPALES - Paleta Púrpura */
-    --primary-color: #ad1f4a;        /* Púrpura - color principal */
-    --primary-dark: #6a0828;         /* Púrpura oscuro para hover */
-    --primary-light: #f2c5e0;        /* Rosa claro para fondos */
-    --accent-color: #d43790;         /* Rosa vibrante para acentos */
-=======
-    /* COLORES PRINCIPALES - Paleta Petal Party */
+    /* COLORES PRINCIPALES - Paleta Púrpura Mazarino */
     --primary-color: #ad1f4a;        /* Burgundy - color principal */
     --primary-dark: #6a0828;         /* Burgundy oscuro para hover */
-    --primary-light: #f2c5e0;        /* Hot Pink claro para fondos */
-    --accent-color: #d43790;         /* Pink vibrante para acentos */
->>>>>>> 5445347 (Update_new_version)
+    --primary-light: #f2c5e0;        /* Rosa claro para fondos */
+    --accent-color: #d43790;         /* Rosa vibrante para acentos */
     --accent-light: #ec8fd0;         /* Magenta suave */
 
     /* COLORES DE TEXTO */
@@ -195,8 +187,8 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Degradado: púrpura → BLANCO en SUPERIOR DERECHA (135deg = bottom-left a top-right) */
-    background: linear-gradient(135deg, rgba(173, 31, 74, 0.95) 0%, rgba(106, 8, 40, 0.7) 50%, #ffffff 100%);
+    /* Degradado: BLANCO en SUPERIOR IZQUIERDA -> púrpura en BOTTOM RIGHT (315deg) */
+    background: linear-gradient(315deg, #ffffff 0%, rgba(106, 8, 40, 0.7) 50%, rgba(173, 31, 74, 0.95) 100%);
     z-index: 1;
 }
 

@@ -15,11 +15,13 @@
     let siteConfig = null;
 
     // ====================================================
-    // Cargar configuración desde config.json
+    // Cargar configuración desde config.json (con cache-busting)
     // ====================================================
     async function loadConfig() {
         try {
-            const response = await fetch('config.json');
+            // Agregar timestamp para evitar caché del navegador
+            const cacheBuster = '?v=' + Date.now();
+            const response = await fetch('config.json' + cacheBuster);
             if (!response.ok) throw new Error('No se pudo cargar config.json');
             siteConfig = await response.json();
             applyAllConfig();
@@ -211,10 +213,13 @@
             if (h2) h2.textContent = nos.titulo_grande;
         }
 
-        // Paragraphs
-        const paragraphs = section.querySelectorAll('.col-lg-6 > p.text-muted');
-        if (nos.parrafo_1 && paragraphs[1]) paragraphs[1].textContent = nos.parrafo_1;
-        if (nos.parrafo_2 && paragraphs[2]) paragraphs[2].textContent = nos.parrafo_2;
+        // Paragraphs - usar selectores más específicos
+        const colTexto = section.querySelector('.col-lg-6');
+        if (colTexto) {
+            const paragraphs = colTexto.querySelectorAll('p.text-muted');
+            if (nos.parrafo_1 && paragraphs[0]) paragraphs[0].textContent = nos.parrafo_1;
+            if (nos.parrafo_2 && paragraphs[1]) paragraphs[1].textContent = nos.parrafo_2;
+        }
 
         // Image
         if (nos.imagen) {
@@ -225,18 +230,32 @@
             }
         }
 
-        // Values
-        const valueLists = section.querySelectorAll('.col-md-6 > ul li');
+        // Values - usar selectores más específicos
         if (nos.valores_columna_1) {
-            nos.valores_columna_1.forEach(function (val, i) {
-                if (valueLists[i]) valueLists[i].textContent = val;
-            });
+            const firstValueCol = section.querySelectorAll('.col-md-6')[0];
+            if (firstValueCol) {
+                const items = firstValueCol.querySelectorAll('li');
+                nos.valores_columna_1.forEach(function (val, i) {
+                    if (items[i]) {
+                        items[i].textContent = val;
+                        // Re-agregar el ícono
+                        items[i].innerHTML = '<i class="fas fa-check-circle text-primary me-2"></i>' + val;
+                    }
+                });
+            }
         }
         if (nos.valores_columna_2) {
-            const startIdx = (nos.valores_columna_1 || []).length;
-            nos.valores_columna_2.forEach(function (val, i) {
-                if (valueLists[startIdx + i]) valueLists[startIdx + i].textContent = val;
-            });
+            const secondValueCol = section.querySelectorAll('.col-md-6')[1];
+            if (secondValueCol) {
+                const items = secondValueCol.querySelectorAll('li');
+                nos.valores_columna_2.forEach(function (val, i) {
+                    if (items[i]) {
+                        items[i].textContent = val;
+                        // Re-agregar el ícono
+                        items[i].innerHTML = '<i class="fas fa-check-circle text-primary me-2"></i>' + val;
+                    }
+                });
+            }
         }
 
         // Stats
@@ -418,7 +437,7 @@
     }
 
     // ====================================================
-    // FUNDADORAS
+    // FUNDADORAS - CON SELECTORES ESPECÍFICOS
     // ====================================================
     function applyFundadoras() {
         const fund = siteConfig.FUNDADORAS;
@@ -435,33 +454,35 @@
             if (h2) h2.textContent = fund.titulo_grande;
         }
         if (fund.descripcion) {
-            const p = section.querySelector('.text-muted.mx-auto');
+            const p = section.querySelector('.text-center p.text-muted');
             if (p) p.textContent = fund.descripcion;
         }
 
-        // Founders cards
+        // Founders cards - usar IDs específicos para evitar conflictos
         if (fund.fundadoras) {
-            const cards = section.querySelectorAll('.founder-card');
             fund.fundadoras.forEach(function (f, i) {
-                if (cards[i]) {
-                    const img = cards[i].querySelector('.founder-img');
-                    const h5 = cards[i].querySelector('h5');
-                    const cargo = cards[i].querySelector('.text-primary');
-                    const bio = cards[i].querySelector('.text-muted');
-                    if (img) { img.src = f.imagen; img.alt = f.nombre; }
-                    if (h5) h5.textContent = f.nombre;
-                    if (cargo) cargo.textContent = f.cargo;
-                    if (bio) bio.textContent = f.bio;
-                }
+                const imgEl = qs('#founder-img-' + (i + 1));
+                const nameEl = qs('#founder-name-' + (i + 1));
+                const cargoEl = qs('#founder-cargo-' + (i + 1));
+                const bioEl = qs('#founder-bio-' + (i + 1));
+
+                if (imgEl) { imgEl.src = f.imagen; imgEl.alt = f.nombre; }
+                if (nameEl) nameEl.textContent = f.nombre;
+                if (cargoEl) cargoEl.textContent = f.cargo;
+                if (bioEl) bioEl.textContent = '"' + f.bio + '"';
             });
         }
 
-        // Mission
+        // Mission - usar IDs específicos
         if (fund.mision) {
-            const missionTitle = qs('#fundadoras .bg-white.p-4 h5');
-            const missionText = qs('#fundadoras .bg-white.p-4 p');
-            if (missionTitle && fund.mision.titulo) missionTitle.innerHTML = '<i class="fas fa-heart me-2"></i>' + fund.mision.titulo;
-            if (missionText && fund.mision.texto) missionText.textContent = fund.mision.texto;
+            const missionTitle = qs('#mission-title');
+            const missionText = qs('#mission-text');
+            if (missionTitle && fund.mision.titulo) {
+                missionTitle.innerHTML = '<i class="fas fa-heart me-2"></i>' + fund.mision.titulo;
+            }
+            if (missionText && fund.mision.texto) {
+                missionText.textContent = fund.mision.texto;
+            }
         }
     }
 
@@ -483,7 +504,7 @@
             if (h2) h2.textContent = contact.titulo_grande;
         }
         if (contact.descripcion) {
-            const p = section.querySelector('.text-muted.mx-auto');
+            const p = section.querySelector('.text-center p.text-muted');
             if (p) p.textContent = contact.descripcion;
         }
 
@@ -493,28 +514,28 @@
             if (infoDiv) {
                 const items = infoDiv.querySelectorAll('.d-flex > div:nth-child(2)');
                 if (contact.informacion.telefono && items[0]) {
-                    items[0].querySelector('h6').textContent = contact.informacion.telefono.label;
-                    items[0].querySelector('p').textContent = contact.informacion.telefono.valor;
+                    const h6 = items[0].querySelector('h6');
+                    const p = items[0].querySelector('p');
+                    if (h6) h6.textContent = contact.informacion.telefono.label;
+                    if (p) p.textContent = contact.informacion.telefono.valor;
                 }
                 if (contact.informacion.email && items[1]) {
-                    items[1].querySelector('h6').textContent = contact.informacion.email.label;
-                    items[1].querySelector('p').textContent = contact.informacion.email.valor;
+                    const h6 = items[1].querySelector('h6');
+                    const p = items[1].querySelector('p');
+                    if (h6) h6.textContent = contact.informacion.email.label;
+                    if (p) p.textContent = contact.informacion.email.valor;
                 }
                 if (contact.informacion.instagram && items[2]) {
                     const h6 = items[2].querySelector('h6');
-                    const p = items[2].querySelector('p');
                     const a = items[2].querySelector('a');
-                    h6.textContent = contact.informacion.instagram.label;
+                    if (h6) h6.textContent = contact.informacion.instagram.label;
                     if (a) { a.href = contact.informacion.instagram.enlace; a.textContent = contact.informacion.instagram.valor; }
-                    else p.textContent = contact.informacion.instagram.valor;
                 }
                 if (contact.informacion.facebook && items[3]) {
                     const h6 = items[3].querySelector('h6');
-                    const p = items[3].querySelector('p');
                     const a = items[3].querySelector('a');
-                    h6.textContent = contact.informacion.facebook.label;
+                    if (h6) h6.textContent = contact.informacion.facebook.label;
                     if (a) { a.href = contact.informacion.facebook.enlace; a.textContent = contact.informacion.facebook.valor; }
-                    else p.textContent = contact.informacion.facebook.valor;
                 }
             }
         }
@@ -565,14 +586,12 @@
         if (foot.logo) {
             const h5 = footer.querySelector('h5');
             if (h5) {
-                const img = h5.querySelector('img');
-                if (img) { img.src = foot.logo.src; img.alt = foot.logo.texto; }
                 h5.innerHTML = '<img src="' + foot.logo.src + '" alt="' + foot.logo.texto + '" style="height:40px; margin-right:10px;">' + foot.logo.texto;
             }
         }
         if (foot.descripcion) {
-            const p = footer.querySelector('.text-white-50');
-            if (p) p.textContent = foot.descripcion;
+            const descP = footer.querySelector('.col-lg-4 p.text-white-50');
+            if (descP) descP.textContent = foot.descripcion;
         }
 
         // Social links
@@ -599,18 +618,33 @@
 
         // Footer services
         if (foot.servicios_footer) {
-            const servLinks = footer.querySelectorAll('.col-lg-3:nth-of-type(1) .list-unstyled li a');
-            foot.servicios_footer.forEach(function (link, i) {
-                if (servLinks[i]) {
-                    servLinks[i].href = link.enlace;
-                    servLinks[i].textContent = link.texto;
+            const servLinks = footer.querySelectorAll('div.col-lg-3:nth-child(3) .list-unstyled li a');
+            if (servLinks.length === 0) {
+                // Fallback: buscar todos los col-lg-3 y tomar el primero que tenga servicios
+                const cols = footer.querySelectorAll('.col-lg-3');
+                if (cols[0]) {
+                    const fallbackLinks = cols[0].querySelectorAll('.list-unstyled li a');
+                    foot.servicios_footer.forEach(function (link, i) {
+                        if (fallbackLinks[i]) {
+                            fallbackLinks[i].href = link.enlace;
+                            fallbackLinks[i].textContent = link.texto;
+                        }
+                    });
                 }
-            });
+            } else {
+                foot.servicios_footer.forEach(function (link, i) {
+                    if (linksCol[i]) {
+                        linksCol[i].href = link.enlace;
+                        linksCol[i].textContent = link.texto;
+                    }
+                });
+            }
         }
 
         // Newsletter
         if (foot.boletin) {
-            const boletinCol = footer.querySelectorAll('.col-lg-3')[1];
+            const boletinCols = footer.querySelectorAll('.col-lg-3');
+            const boletinCol = boletinCols[boletinCols.length - 1]; // Último col-lg-3
             if (boletinCol) {
                 const h5 = boletinCol.querySelector('h5');
                 const p = boletinCol.querySelector('p');
@@ -623,12 +657,12 @@
 
         // Copyright
         if (foot.copyright) {
-            const copyP = footer.querySelectorAll('.text-white-50')[2];
-            if (copyP) copyP.textContent = foot.copyright;
+            const copyrightP = footer.querySelectorAll('hr + .row .text-white-50');
+            if (copyrightP[0]) copyrightP[0].textContent = foot.copyright;
         }
         if (foot.frase_final) {
-            const fraseP = footer.querySelectorAll('.text-white-50')[3];
-            if (fraseP) fraseP.textContent = foot.frase_final;
+            const fraseP = footer.querySelectorAll('hr + .row .text-white-50');
+            if (fraseP[1]) fraseP[1].textContent = foot.frase_final;
         }
     }
 
