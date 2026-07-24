@@ -439,32 +439,28 @@
             if (p) p.textContent = fund.descripcion;
         }
 
-        // Founders cards
+        // Founders cards - usar IDs específicos para evitar solapamiento
         if (fund.fundadoras) {
-            const cards = section.querySelectorAll('.founder-card');
             fund.fundadoras.forEach(function (f, i) {
-                if (cards[i]) {
-                    const img = cards[i].querySelector('.founder-img');
-                    const h5 = cards[i].querySelector('h5');
-                    const cargo = cards[i].querySelector('.text-primary');
-                    const bio = cards[i].querySelector('.text-muted');
-                    if (img) { img.src = f.imagen; img.alt = f.nombre; }
-                    if (h5) h5.textContent = f.nombre;
-                    if (cargo) cargo.textContent = f.cargo;
-                    if (bio) bio.textContent = f.bio;
-                }
+                const idx = i + 1; // IDs son 1-based: founder-img-1, founder-name-1, etc.
+                const imgEl = qs('#founder-img-' + idx);
+                const nameEl = qs('#founder-name-' + idx);
+                const cargoEl = qs('#founder-cargo-' + idx);
+                const bioEl = qs('#founder-bio-' + idx);
+
+                if (imgEl) { imgEl.src = f.imagen; imgEl.alt = f.nombre; }
+                if (nameEl) nameEl.textContent = f.nombre;
+                if (cargoEl) cargoEl.textContent = f.cargo;
+                if (bioEl) bioEl.textContent = f.bio;
             });
         }
 
-        // Mission - usar selector más específico (.col-lg-8) para no confundir con founder cards
+        // Mission - usar IDs específicos
         if (fund.mision) {
-            const missionContainer = qs('#fundadoras .col-lg-8.mx-auto > .bg-white');
-            if (missionContainer) {
-                const missionTitle = missionContainer.querySelector('h5');
-                const missionText = missionContainer.querySelector('p');
-                if (missionTitle && fund.mision.titulo) missionTitle.innerHTML = '<i class="fas fa-heart me-2"></i>' + fund.mision.titulo;
-                if (missionText && fund.mision.texto) missionText.textContent = fund.mision.texto;
-            }
+            const missionTitle = qs('#mission-title');
+            const missionText = qs('#mission-text');
+            if (missionTitle && fund.mision.titulo) missionTitle.innerHTML = '<i class="fas fa-heart me-2"></i>' + fund.mision.titulo;
+            if (missionText && fund.mision.texto) missionText.textContent = fund.mision.texto;
         }
     }
 
