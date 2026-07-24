@@ -456,12 +456,15 @@
             });
         }
 
-        // Mission
+        // Mission - usar selector más específico (.col-lg-8) para no confundir con founder cards
         if (fund.mision) {
-            const missionTitle = qs('#fundadoras .bg-white.p-4 h5');
-            const missionText = qs('#fundadoras .bg-white.p-4 p');
-            if (missionTitle && fund.mision.titulo) missionTitle.innerHTML = '<i class="fas fa-heart me-2"></i>' + fund.mision.titulo;
-            if (missionText && fund.mision.texto) missionText.textContent = fund.mision.texto;
+            const missionContainer = qs('#fundadoras .col-lg-8.mx-auto > .bg-white');
+            if (missionContainer) {
+                const missionTitle = missionContainer.querySelector('h5');
+                const missionText = missionContainer.querySelector('p');
+                if (missionTitle && fund.mision.titulo) missionTitle.innerHTML = '<i class="fas fa-heart me-2"></i>' + fund.mision.titulo;
+                if (missionText && fund.mision.texto) missionText.textContent = fund.mision.texto;
+            }
         }
     }
 
