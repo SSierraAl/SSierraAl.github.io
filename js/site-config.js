@@ -68,7 +68,7 @@ var siteConfigData = {
     "titulo_pequeno": "Sobre Nosotros",
     "titulo_grande": "Cuidamos Cada Detalle de tu Evento",
     "parrafo_1": "En Mazarino creemos que una buena reunión se construye desde los detalles más pequeños. Nos especializamos en la preparación y entrega de refrigerios y brunch de alta calidad para empresas, cuidando cada ingrediente, la presentación y la puntualidad.",
-    "parrafo_2": "Ofrecemos opciones variadas, saludables y deliciosas que se adapten a las necesidades de tu equipo: desde refrigerios estándar hasta desayunos completos y brunch ejecutivos. Todo preparado con ingredientes frescos, empaques individuales o grupales, y entregas en Bogotá y zona periférica los 365 días del año.",
+    "parrafo_2": "Llevamos 10 años siendo aliados estratégicos para las empresas, brindándoles opciones saludables, novedosas y ajustadas a las necesidades de nuestros clientes.",
     "imagen": {
       "src": "Fotos Editadas Mazarino/1.png",
       "alt": "Refrigerios Mazarino"
