@@ -13,7 +13,7 @@ var siteConfigData = {
 
   "COLORES": {
     "nota": "Variables CSS para personalizar colores. Usa códigos hex como #ad1f4a",
-    "primary_color": "#ad1f4a",
+    "primary_color": "#3b0f28",
     "primary_dark": "#6a0828",
     "primary_light": "#f2c5e0",
     "accent_color": "#d43790",
