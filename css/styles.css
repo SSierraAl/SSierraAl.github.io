@@ -1,29 +1,29 @@
 /* =====================================================
-   ARTESANALES MAZARINO - REFRIGERIOS & BRUNCH EMPRESARIAL
-   =====================================================
-   
-   PALETA DE COLORES PETAL PARTY:
-   - Hot Pink: #f2c5e0
-   - Pink: #d43790
-   - Magenta: #ec8fd0
-   - Burgundy: #870a30
-   
-   Cambia las variables CSS abajo para personalizar los colores.
-   ===================================================== */
+    ARTESANALES MAZARINO - REFRIGERIOS & BRUNCH EMPRESARIAL
+    =====================================================
+    
+    PALETA DE COLORES PETAL PARTY (PURPURA):
+    - Primary: #ad1f4a
+    - Dark: #6a0828
+    - Light: #f2c5e0
+    - Accent: #d43790
+    
+    Cambia las variables CSS abajo para personalizar los colores.
+    ===================================================== */
 
 /* =====================================================
-   VARIABLES CSS - PERSONALIZA AQUÍ
-   ===================================================== */
+    VARIABLES CSS - PERSONALIZA AQUÍ
+    ===================================================== */
 :root {
-    /* COLORES PRINCIPALES - Paleta Petal Party */
-    --primary-color: #ad1f4a;        /* Burgundy - color principal */
-    --primary-dark: #6a0828;         /* Burgundy oscuro para hover */
-    --primary-light: #f2c5e0;        /* Hot Pink claro para fondos */
-    --accent-color: #d43790;         /* Pink vibrante para acentos */
+    /* COLORES PRINCIPALES - Paleta Púrpura */
+    --primary-color: #ad1f4a;        /* Púrpura - color principal */
+    --primary-dark: #6a0828;         /* Púrpura oscuro para hover */
+    --primary-light: #f2c5e0;        /* Rosa claro para fondos */
+    --accent-color: #d43790;         /* Rosa vibrante para acentos */
     --accent-light: #ec8fd0;         /* Magenta suave */
 
     /* COLORES DE TEXTO */
-    --text-dark: #2d0a18;            /* Texto oscuro (burgundy muy oscuro) */
+    --text-dark: #2d0a18;            /* Texto oscuro (púrpura muy oscuro) */
     --text-medium: #6b4e5e;          /* Texto medio */
     --text-light: #ffffff;           /* Texto blanco */
 
@@ -43,9 +43,9 @@
     --border-radius: 12px;
 
     /* SOMBRAS */
-    --shadow-sm: 0 2px 8px rgba(135, 10, 48, 0.08);
-    --shadow-md: 0 4px 16px rgba(135, 10, 48, 0.12);
-    --shadow-lg: 0 8px 32px rgba(135, 10, 48, 0.15);
+    --shadow-sm: 0 2px 8px rgba(173, 31, 74, 0.08);
+    --shadow-md: 0 4px 16px rgba(173, 31, 74, 0.12);
+    --shadow-lg: 0 8px 32px rgba(173, 31, 74, 0.15);
 }
 
 /* =====================================================
@@ -188,7 +188,7 @@ img {
     width: 100%;
     height: 100%;
     /* PERSONALIZAR: Oscurecer el fondo (0.6 = 60% oscuro) */
-    background: linear-gradient(135deg, rgba(230, 213, 218, 0.8), rgba(150, 9, 89, 0.89));
+    background: linear-gradient(135deg, rgba(173, 31, 74, 0.8), rgba(106, 8, 40, 0.89));
     z-index: 1;
 }
 
@@ -304,7 +304,7 @@ section h6.text-uppercase {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(135, 10, 48, 0.85);
+    background: rgba(173, 31, 74, 0.85);
     display: flex;
     flex-direction: column;
     align-items: center;
