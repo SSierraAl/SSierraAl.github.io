@@ -25,9 +25,11 @@
             if (!response.ok) throw new Error('No se pudo cargar config.json');
             siteConfig = await response.json();
             applyAllConfig();
-            console.log('[ConfigLoader] Configuración aplicada correctamente.');
+            console.log('[ConfigLoader] ✓ Configuración aplicada correctamente.');
+            console.log('[ConfigLoader] Sección NOSOTROS parrafo_1:', siteConfig.NOSOTROS ? siteConfig.NOSOTROS.parrafo_1.substring(0, 50) + '...' : 'NO ENCONTRADA');
+            console.log('[ConfigLoader] Sección FUNDADORAS:', siteConfig.FUNDADORAS ? 'OK' : 'NO ENCONTRADA');
         } catch (error) {
-            console.error('[ConfigLoader] Error:', error);
+            console.error('[ConfigLoader] ✗ Error:', error);
         }
     }
 
@@ -196,7 +198,7 @@
     }
 
     // ====================================================
-    // NOSOTROS
+    // NOSOTROS - FIXED: selector ahora apunta a la columna de texto
     // ====================================================
     function applyNosotros() {
         const nos = siteConfig.NOSOTROS;
@@ -213,8 +215,10 @@
             if (h2) h2.textContent = nos.titulo_grande;
         }
 
-        // Paragraphs - usar selectores más específicos
-        const colTexto = section.querySelector('.col-lg-6');
+        // FIX CRITICO: querySelector('.col-lg-6') devuelve la PRIMERA columna (la IMAGEN).
+        // Usamos [1] para obtener la SEGUNDA columna que contiene el texto.
+        const allCols = section.querySelectorAll('.col-lg-6');
+        const colTexto = allCols[1]; // La segunda .col-lg-6 es la de texto
         if (colTexto) {
             const paragraphs = colTexto.querySelectorAll('p.text-muted');
             if (nos.parrafo_1 && paragraphs[0]) paragraphs[0].textContent = nos.parrafo_1;
@@ -230,28 +234,26 @@
             }
         }
 
-        // Values - usar selectores más específicos
-        if (nos.valores_columna_1) {
-            const firstValueCol = section.querySelectorAll('.col-md-6')[0];
+        // Values: los .col-md-6 están dentro de colTexto (la segunda columna)
+        if (nos.valores_columna_1 && colTexto) {
+            const valueCols = colTexto.querySelectorAll('.col-md-6');
+            const firstValueCol = valueCols[0];
             if (firstValueCol) {
                 const items = firstValueCol.querySelectorAll('li');
                 nos.valores_columna_1.forEach(function (val, i) {
                     if (items[i]) {
-                        items[i].textContent = val;
-                        // Re-agregar el ícono
                         items[i].innerHTML = '<i class="fas fa-check-circle text-primary me-2"></i>' + val;
                     }
                 });
             }
         }
-        if (nos.valores_columna_2) {
-            const secondValueCol = section.querySelectorAll('.col-md-6')[1];
+        if (nos.valores_columna_2 && colTexto) {
+            const valueCols = colTexto.querySelectorAll('.col-md-6');
+            const secondValueCol = valueCols[1];
             if (secondValueCol) {
                 const items = secondValueCol.querySelectorAll('li');
                 nos.valores_columna_2.forEach(function (val, i) {
                     if (items[i]) {
-                        items[i].textContent = val;
-                        // Re-agregar el ícono
                         items[i].innerHTML = '<i class="fas fa-check-circle text-primary me-2"></i>' + val;
                     }
                 });
@@ -337,6 +339,7 @@
 
         // Filter buttons - rebuild from config
         if (menu.categorias) {
+            // Use the specific container with filter buttons
             const filterContainer = section.querySelector('.text-center.mb-4');
             if (filterContainer) {
                 filterContainer.innerHTML = '';
@@ -437,7 +440,7 @@
     }
 
     // ====================================================
-    // FUNDADORAS - CON SELECTORES ESPECÍFICOS
+    // FUNDADORAS - CON SELECTORES ESPECÍFICOS (IDs)
     // ====================================================
     function applyFundadoras() {
         const fund = siteConfig.FUNDADORAS;
@@ -454,7 +457,7 @@
             if (h2) h2.textContent = fund.titulo_grande;
         }
         if (fund.descripcion) {
-            const p = section.querySelector('.text-center p.text-muted');
+            const p = section.querySelector('.text-center.mb-5 p.text-muted');
             if (p) p.textContent = fund.descripcion;
         }
 
@@ -504,7 +507,7 @@
             if (h2) h2.textContent = contact.titulo_grande;
         }
         if (contact.descripcion) {
-            const p = section.querySelector('.text-center p.text-muted');
+            const p = section.querySelector('.text-center.mb-5 p.text-muted');
             if (p) p.textContent = contact.descripcion;
         }
 
@@ -512,30 +515,42 @@
         if (contact.informacion) {
             const infoDiv = qs('.contact-info');
             if (infoDiv) {
-                const items = infoDiv.querySelectorAll('.d-flex > div:nth-child(2)');
-                if (contact.informacion.telefono && items[0]) {
-                    const h6 = items[0].querySelector('h6');
-                    const p = items[0].querySelector('p');
-                    if (h6) h6.textContent = contact.informacion.telefono.label;
-                    if (p) p.textContent = contact.informacion.telefono.valor;
+                const flexItems = infoDiv.querySelectorAll('.d-flex.mb-4, .d-flex:last-of-type');
+                if (contact.informacion.telefono && flexItems[0]) {
+                    const textDiv = flexItems[0].querySelectorAll('div')[1];
+                    if (textDiv) {
+                        const h6 = textDiv.querySelector('h6');
+                        const p = textDiv.querySelector('p');
+                        if (h6) h6.textContent = contact.informacion.telefono.label;
+                        if (p) p.textContent = contact.informacion.telefono.valor;
+                    }
                 }
-                if (contact.informacion.email && items[1]) {
-                    const h6 = items[1].querySelector('h6');
-                    const p = items[1].querySelector('p');
-                    if (h6) h6.textContent = contact.informacion.email.label;
-                    if (p) p.textContent = contact.informacion.email.valor;
+                if (contact.informacion.email && flexItems[1]) {
+                    const textDiv = flexItems[1].querySelectorAll('div')[1];
+                    if (textDiv) {
+                        const h6 = textDiv.querySelector('h6');
+                        const p = textDiv.querySelector('p');
+                        if (h6) h6.textContent = contact.informacion.email.label;
+                        if (p) p.textContent = contact.informacion.email.valor;
+                    }
                 }
-                if (contact.informacion.instagram && items[2]) {
-                    const h6 = items[2].querySelector('h6');
-                    const a = items[2].querySelector('a');
-                    if (h6) h6.textContent = contact.informacion.instagram.label;
-                    if (a) { a.href = contact.informacion.instagram.enlace; a.textContent = contact.informacion.instagram.valor; }
+                if (contact.informacion.instagram && flexItems[2]) {
+                    const textDiv = flexItems[2].querySelectorAll('div')[1];
+                    if (textDiv) {
+                        const h6 = textDiv.querySelector('h6');
+                        const a = textDiv.querySelector('a');
+                        if (h6) h6.textContent = contact.informacion.instagram.label;
+                        if (a) { a.href = contact.informacion.instagram.enlace; a.textContent = contact.informacion.instagram.valor; }
+                    }
                 }
-                if (contact.informacion.facebook && items[3]) {
-                    const h6 = items[3].querySelector('h6');
-                    const a = items[3].querySelector('a');
-                    if (h6) h6.textContent = contact.informacion.facebook.label;
-                    if (a) { a.href = contact.informacion.facebook.enlace; a.textContent = contact.informacion.facebook.valor; }
+                if (contact.informacion.facebook && flexItems[3]) {
+                    const textDiv = flexItems[3].querySelectorAll('div')[1];
+                    if (textDiv) {
+                        const h6 = textDiv.querySelector('h6');
+                        const a = textDiv.querySelector('a');
+                        if (h6) h6.textContent = contact.informacion.facebook.label;
+                        if (a) { a.href = contact.informacion.facebook.enlace; a.textContent = contact.informacion.facebook.valor; }
+                    }
                 }
             }
         }
@@ -574,7 +589,7 @@
     }
 
     // ====================================================
-    // FOOTER
+    // FOOTER - FIXED: selectors más específicos
     // ====================================================
     function applyFooter() {
         const foot = siteConfig.FOOTER;
@@ -582,16 +597,25 @@
         const footer = qs('footer');
         if (!footer) return;
 
-        // Logo and description
+        // Logo and text
         if (foot.logo) {
-            const h5 = footer.querySelector('h5');
-            if (h5) {
-                h5.innerHTML = '<img src="' + foot.logo.src + '" alt="' + foot.logo.texto + '" style="height:40px; margin-right:10px;">' + foot.logo.texto;
+            const firstCol = footer.querySelectorAll('.col-lg-4, .col-lg-2, .col-lg-3')[0];
+            if (firstCol) {
+                const h5 = firstCol.querySelector('h5');
+                if (h5) {
+                    h5.innerHTML = '<img src="' + foot.logo.src + '" alt="' + foot.logo.texto + '" style="height:40px; margin-right:10px;">' + foot.logo.texto;
+                }
             }
         }
+
+        // Description - target the first .col-lg-4 specifically
         if (foot.descripcion) {
-            const descP = footer.querySelector('.col-lg-4 p.text-white-50');
-            if (descP) descP.textContent = foot.descripcion;
+            const footerCols = footer.querySelectorAll('.row.g-4 > div');
+            const firstCol = footerCols[0];
+            if (firstCol) {
+                const descP = firstCol.querySelector('p.text-white-50');
+                if (descP) descP.textContent = foot.descripcion;
+            }
         }
 
         // Social links
@@ -605,46 +629,40 @@
             });
         }
 
-        // Footer links
+        // Footer links (col-lg-2)
         if (foot.enlaces_footer) {
-            const linksCol = footer.querySelectorAll('.col-lg-2 .list-unstyled li a');
-            foot.enlaces_footer.forEach(function (link, i) {
-                if (linksCol[i]) {
-                    linksCol[i].href = link.enlace;
-                    linksCol[i].textContent = link.texto;
-                }
-            });
-        }
-
-        // Footer services
-        if (foot.servicios_footer) {
-            const servLinks = footer.querySelectorAll('div.col-lg-3:nth-child(3) .list-unstyled li a');
-            if (servLinks.length === 0) {
-                // Fallback: buscar todos los col-lg-3 y tomar el primero que tenga servicios
-                const cols = footer.querySelectorAll('.col-lg-3');
-                if (cols[0]) {
-                    const fallbackLinks = cols[0].querySelectorAll('.list-unstyled li a');
-                    foot.servicios_footer.forEach(function (link, i) {
-                        if (fallbackLinks[i]) {
-                            fallbackLinks[i].href = link.enlace;
-                            fallbackLinks[i].textContent = link.texto;
-                        }
-                    });
-                }
-            } else {
-                foot.servicios_footer.forEach(function (link, i) {
-                    if (linksCol[i]) {
-                        linksCol[i].href = link.enlace;
-                        linksCol[i].textContent = link.texto;
+            const footerCols = footer.querySelectorAll('.row.g-4 > div');
+            const linksCol = footerCols[1]; // col-lg-2
+            if (linksCol) {
+                const links = linksCol.querySelectorAll('.list-unstyled li a');
+                foot.enlaces_footer.forEach(function (link, i) {
+                    if (links[i]) {
+                        links[i].href = link.enlace;
+                        links[i].textContent = link.texto;
                     }
                 });
             }
         }
 
-        // Newsletter
+        // Footer services (first col-lg-3)
+        if (foot.servicios_footer) {
+            const footerCols = footer.querySelectorAll('.row.g-4 > div');
+            const servicesCol = footerCols[2]; // col-lg-3 (servicios)
+            if (servicesCol) {
+                const links = servicesCol.querySelectorAll('.list-unstyled li a');
+                foot.servicios_footer.forEach(function (link, i) {
+                    if (links[i]) {
+                        links[i].href = link.enlace;
+                        links[i].textContent = link.texto;
+                    }
+                });
+            }
+        }
+
+        // Newsletter (last col-lg-3)
         if (foot.boletin) {
-            const boletinCols = footer.querySelectorAll('.col-lg-3');
-            const boletinCol = boletinCols[boletinCols.length - 1]; // Último col-lg-3
+            const footerCols = footer.querySelectorAll('.row.g-4 > div');
+            const boletinCol = footerCols[3]; // Último col
             if (boletinCol) {
                 const h5 = boletinCol.querySelector('h5');
                 const p = boletinCol.querySelector('p');
@@ -655,14 +673,20 @@
             }
         }
 
-        // Copyright
+        // Copyright and frase final
         if (foot.copyright) {
-            const copyrightP = footer.querySelectorAll('hr + .row .text-white-50');
-            if (copyrightP[0]) copyrightP[0].textContent = foot.copyright;
+            const bottomRow = footer.querySelector('hr + .row');
+            if (bottomRow) {
+                const pTags = bottomRow.querySelectorAll('p.text-white-50');
+                if (pTags[0]) pTags[0].textContent = foot.copyright;
+            }
         }
         if (foot.frase_final) {
-            const fraseP = footer.querySelectorAll('hr + .row .text-white-50');
-            if (fraseP[1]) fraseP[1].textContent = foot.frase_final;
+            const bottomRow = footer.querySelector('hr + .row');
+            if (bottomRow) {
+                const pTags = bottomRow.querySelectorAll('p.text-white-50');
+                if (pTags[1]) pTags[1].textContent = foot.frase_final;
+            }
         }
     }
 
