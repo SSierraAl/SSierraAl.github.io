@@ -235,9 +235,8 @@ section h6.text-uppercase {
 .about-img {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-lg);
-    height: 400px;
-    object-fit: cover;
     width: 100%;
+    height: auto;
 }
 
 .stat-number {
@@ -349,8 +348,8 @@ section h6.text-uppercase {
 }
 
 .product-card img {
-    height: 220px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
     transition: all 0.5s ease;
 }
 
@@ -621,7 +620,7 @@ footer .social-links a:hover {
     }
     
     .about-img {
-        height: 300px;
+        height: auto;
         margin-bottom: 2rem;
     }
 }
@@ -641,10 +640,6 @@ footer .social-links a:hover {
     
     .stat-number {
         font-size: 2rem;
-    }
-    
-    .about-img {
-        height: 250px;
     }
     
     .back-to-top {
