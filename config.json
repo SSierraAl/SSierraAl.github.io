@@ -194,6 +194,13 @@
       {
         "categoria": "desayuno",
         "etiqueta": "Brunch",
+        "titulo": "Parfait",
+        "descripcion": "Delicioso e irresistibile y por supuesto saludable.",
+        "imagen": "Fotos Editadas Mazarino/0_20.png"
+      },
+      {
+        "categoria": "desayuno",
+        "etiqueta": "Brunch",
         "titulo": "Lassagna",
         "descripcion": "Omelette con jamón ahumado y queso mozzarella, tostadas de frutos rojos, jugo natural.",
         "imagen": "Fotos Editadas Mazarino/0_8.png"
