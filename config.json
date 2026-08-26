@@ -64,9 +64,9 @@
       "Pedidos desde 15 unidades"
     ],
     "estadisticas": [
-      { "numero": "500+", "descripcion": "Eventos Atendidos" },
+      { "numero": "1000+", "descripcion": "Eventos Atendidos" },
       { "numero": "365", "descripcion": "Días de Entrega" },
-      { "numero": "50+", "descripcion": "Empresas Confían" },
+      { "numero": "10+", "descripcion": "Años de experiencia" },
       { "numero": "100%", "descripcion": "Ingredientes Frescos" }
     ]
   },
