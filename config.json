@@ -126,12 +126,13 @@
     "nota": "Productos y precios. categorias define los botones de filtro",
     "titulo_pequeno": "Nuestro Menú",
     "titulo_grande": "Productos",
-    "descripcion": "Todas nuestras opciones incluyen ingredientes frescos y presentación premium. Para conocer todo nuestro portafolio, no dudes en escribirnos.",
+    "descripcion": "Todas nuestras opciones incluyen ingredientes frescos de alta calidad. Para conocer todo nuestro portafolio, no dudes en escribirnos.",
     "categorias": [
       { "id": "all", "texto": "Todos" },
       { "id": "refrigerio", "texto": "Refrigerios y Brunch" },
       { "id": "desayuno", "texto": "Desayunos" },
-      { "id": "estacion", "texto": "Estaciones de Café" }
+      { "id": "estacion", "texto": "Estaciones de Café" },
+      { "id": "personalizado", "texto": "Pedidos Personalizados" }
     ],
     "productos": [
       {
