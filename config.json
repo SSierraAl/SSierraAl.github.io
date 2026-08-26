@@ -220,18 +220,25 @@
         "imagen": "Fotos Editadas Mazarino/0_12.png"
       },
       {
-        "categoria": "estacion",
-        "etiqueta": "Estación Café/Té",
+        "categoria": "personalizado",
+        "etiqueta": "Cupcakes",
         "titulo": "Estación de Té Variado",
         "descripcion": "Selección de tés: verde, manzanilla, hibisco, menta. Incluye hervidor, azucarera y cucharas. Para 20 personas.",
-        "imagen": "Fotos Editadas Mazarino/12.png"
+        "imagen": "Fotos Editadas Mazarino/0_13.png"
       },
       {
-        "categoria": "estacion",
-        "etiqueta": "Estación Café/Té",
+        "categoria": "personalizado",
+        "etiqueta": "Mesa de Dulces",
         "titulo": "Estación Combo Café y Té",
         "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
-        "imagen": "Fotos Editadas Mazarino/13.png"
+        "imagen": "Fotos Editadas Mazarino/0_14.png"
+      },
+      {
+        "categoria": "personalizado",
+        "etiqueta": "Brownies",
+        "titulo": "Estación Combo Café y Té",
+        "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
+        "imagen": "Fotos Editadas Mazarino/0_15.png"
       }
     ]
   },
