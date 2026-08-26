@@ -253,6 +253,20 @@
         "titulo": "Estación Combo Café y Té",
         "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
         "imagen": "Fotos Editadas Mazarino/0_17.png"
+      },
+      {
+        "categoria": "personalizado",
+        "etiqueta": "Chocolates",
+        "titulo": "Galletas gourmet",
+        "descripcion": "Galletas con almendras y nueces con chocolate blanco y negro.",
+        "imagen": "Fotos Editadas Mazarino/0_19.png"
+      },
+      {
+        "categoria": "estacion",
+        "etiqueta": "Pasabocas",
+        "titulo": "Pasantes y bebidas",
+        "descripcion": "Cockteles personalizados, y [asantes variados diseñados a la medida, refrescantes y deliciosos.",
+        "imagen": "Fotos Editadas Mazarino/0_18.png"
       }
     ]
   },
