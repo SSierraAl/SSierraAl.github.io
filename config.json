@@ -128,11 +128,11 @@
     "titulo_grande": "Productos",
     "descripcion": "Todas nuestras opciones incluyen ingredientes frescos de alta calidad. Para conocer todo nuestro portafolio, no dudes en escribirnos.",
     "categorias": [
-      { "id": "all", "texto": "Todos" },
       { "id": "refrigerio", "texto": "Refrigerios y Brunch" },
       { "id": "desayuno", "texto": "Desayunos" },
       { "id": "estacion", "texto": "Estaciones de Café" },
-      { "id": "personalizado", "texto": "Pedidos Personalizados" }
+      { "id": "personalizado", "texto": "Pedidos Personalizados" },
+      { "id": "all", "texto": "Todos" }
     ],
     "productos": [
       {
