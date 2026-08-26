@@ -186,6 +186,13 @@
       },
       {
         "categoria": "desayuno",
+        "etiqueta": "Desayuno",
+        "titulo": "Vegetariano",
+        "descripcion": "Omelette con jamón ahumado y queso mozzarella, tostadas de frutos rojos, jugo natural.",
+        "imagen": "Fotos Editadas Mazarino/0_9.png"
+      },
+      {
+        "categoria": "desayuno",
         "etiqueta": "Brunch",
         "titulo": "Lassagna",
         "descripcion": "Omelette con jamón ahumado y queso mozzarella, tostadas de frutos rojos, jugo natural.",
