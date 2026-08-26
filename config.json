@@ -206,18 +206,18 @@
         "imagen": "Fotos Editadas Mazarino/0_10.png"
       },
       {
-        "categoria": "desayuno",
-        "etiqueta": "Desayuno",
-        "titulo": "Wrap de Milanesa",
+        "categoria": "personalizado",
+        "etiqueta": "Pedidos Personalizados",
+        "titulo": "Alfajores",
         "descripcion": "Wrap de milanesa de pollo apanado, Té 0% cal, mix de fruta 8 onzas, barra de granola.",
-        "imagen": "Fotos Editadas Mazarino/10.png"
+        "imagen": "Fotos Editadas Mazarino/0_11.png"
       },
       {
-        "categoria": "estacion",
-        "etiqueta": "Estación Café/Té",
+        "categoria": "personalizado",
+        "etiqueta": "Cupcakes",
         "titulo": "Estación de Café Premium",
         "descripcion": "Café de grano colombiano, café capuchino, complementos: canela, vainilla, edulcorante. Incluye thermos de 2L.",
-        "imagen": "Fotos Editadas Mazarino/11.png"
+        "imagen": "Fotos Editadas Mazarino/0_12.png"
       },
       {
         "categoria": "estacion",
