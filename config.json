@@ -128,8 +128,8 @@
     "titulo_grande": "Productos",
     "descripcion": "Todas nuestras opciones incluyen ingredientes frescos de alta calidad. Para conocer todo nuestro portafolio, no dudes en escribirnos.",
     "categorias": [
-      { "id": "refrigerio", "texto": "Refrigerios y Brunch" },
-      { "id": "desayuno", "texto": "Desayunos" },
+      { "id": "refrigerio", "texto": "Refrigerios" },
+      { "id": "desayuno", "texto": "Desayunos y Brunch" },
       { "id": "estacion", "texto": "Estaciones de Café" },
       { "id": "personalizado", "texto": "Pedidos Personalizados" },
       { "id": "all", "texto": "Todos" }
@@ -166,6 +166,13 @@
       {
         "categoria": "refrigerio",
         "etiqueta": "Refrigerio",
+        "titulo": "Refrigerio Estándar",
+        "descripcion": "Milanesa de pollo, mix de lechuga y espinaca, tomate, salsa de la casa, jugo natural.",
+        "imagen": "Fotos Editadas Mazarino/0_5.png"
+      },
+      {
+        "categoria": "desayuno",
+        "etiqueta": "Desayuno",
         "titulo": "Sanduche Mexicano",
         "descripcion": "Jamón ahumado, queso mozzarella, nachos, lechuga, tomate y salsa de guacamole.",
         "imagen": "Fotos Editadas Mazarino/6.png"
