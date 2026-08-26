@@ -5,7 +5,7 @@
     "nota": "Estos datos aparecen en el navegador y en buscadores",
     "titulo_pagina": "Mazarino | Refrigerios & Brunch Empresarial",
     "descripcion_seo": "Mazarino - Refrigerios, Brunch y Desayunos Empresariales en Bogotá. Cuidamos cada detalle para tus eventos corporativos.",
-    "autor": "Arte Manual Mazarino"
+    "autor": "Mazarino"
   },
 
   "NAVEGACION": {
@@ -13,7 +13,7 @@
     "logo": {
       "src": "MainLogo.png",
       "alt": "Mazarino Logo",
-      "texto_marca": "Arte Manual Mazarino"
+      "texto_marca": " Mazarino"
     },
     "items_menu": [
       { "texto": "Inicio", "enlace": "#inicio" },
@@ -239,6 +239,20 @@
         "titulo": "Estación Combo Café y Té",
         "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
         "imagen": "Fotos Editadas Mazarino/0_15.png"
+      },
+      {
+        "categoria": "personalizado",
+        "etiqueta": "Bandejas de frutas",
+        "titulo": "Estación Combo Café y Té",
+        "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
+        "imagen": "Fotos Editadas Mazarino/0_16.png"
+      },
+      {
+        "categoria": "personalizado",
+        "etiqueta": "Bandejas de frutas",
+        "titulo": "Estación Combo Café y Té",
+        "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
+        "imagen": "Fotos Editadas Mazarino/0_17.png"
       }
     ]
   },
@@ -287,7 +301,7 @@
         "imagen": "founder2.png",
         "nombre": "Erin Kristel",
         "cargo": "Cofundadora & Creativa",
-        "bio": "La idea de Arte Manual Mazarino surgió de ver la necesidad de las empresas bogotanas: refrigerios que no fueran lo mismo de siempre. Queremos que cada bocado cuente una historia de calidad y detalle."
+        "bio": "La idea de Mazarino surgió de ver la necesidad de las empresas bogotanas: refrigerios que no fueran lo mismo de siempre. Queremos que cada bocado cuente una historia de calidad y detalle."
       }
     ],
     "mision": {
@@ -332,7 +346,7 @@
     "nota": "Pie de página",
     "logo": {
       "src": "MainLogo.png",
-      "texto": "Arte Manual Mazarino"
+      "texto": "Mazarino"
     },
     "descripcion": "Especialistas en refrigerios, brunch y desayunos empresariales en Bogotá. Cuidamos cada detalle para que tu evento sea un éxito.",
     "redes_sociales": {
