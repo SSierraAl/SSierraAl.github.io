@@ -130,11 +130,18 @@
     "categorias": [
       { "id": "refrigerio", "texto": "Refrigerios" },
       { "id": "desayuno", "texto": "Desayunos y Brunch" },
-      { "id": "estacion", "texto": "Estaciones de Café" },
       { "id": "personalizado", "texto": "Pedidos Personalizados" },
+      { "id": "estacion", "texto": "Estaciones de Café" },
       { "id": "all", "texto": "Todos" }
     ],
     "productos": [
+      {
+        "categoria": "refrigerio",
+        "etiqueta": "Refrigerio",
+        "titulo": "Refrigerio Estándar",
+        "descripcion": "Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.",
+        "imagen": "Fotos Editadas Mazarino/0_3.png"
+      },
       {
         "categoria": "refrigerio",
         "etiqueta": "Menú Básico",
@@ -154,14 +161,14 @@
         "etiqueta": "Refrigerio",
         "titulo": "Refrigerio Estándar",
         "descripcion": "Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.",
-        "imagen": "Fotos Editadas Mazarino/0_3.png"
+        "imagen": "Fotos Editadas Mazarino/r_01.png"
       },
       {
         "categoria": "refrigerio",
         "etiqueta": "Refrigerio",
         "titulo": "Refrigerio Estándar",
         "descripcion": "Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.",
-        "imagen": "Fotos Editadas Mazarino/r_01.png"
+        "imagen": "Fotos Editadas Mazarino/r_02.png"
       },
       {
         "categoria": "refrigerio",
@@ -176,13 +183,6 @@
         "titulo": "Refrigerio Estándar",
         "descripcion": "Milanesa de pollo, mix de lechuga y espinaca, tomate, salsa de la casa, jugo natural.",
         "imagen": "Fotos Editadas Mazarino/0_5.png"
-      },
-      {
-        "categoria": "refrigerio",
-        "etiqueta": "Refrigerio",
-        "titulo": "Refrigerio Estándar",
-        "descripcion": "Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.",
-        "imagen": "Fotos Editadas Mazarino/r_02.png"
       },
       {
         "categoria": "desayuno",
