@@ -137,21 +137,21 @@
     "productos": [
       {
         "categoria": "refrigerio",
-        "etiqueta": "Refrigerio",
-        "titulo": "Refrigerio Estándar",
+        "etiqueta": "",
+        "titulo": "Menu Básico",
         "descripcion": "Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.",
         "imagen": "Fotos Editadas Mazarino/0_1.jpeg"
       },
       {
         "categoria": "refrigerio",
-        "etiqueta": "Menú Básico",
-        "titulo": "Brunch con Parfait",
+        "etiqueta": "",
+        "titulo": "Menu Básico",
         "descripcion": "Parfait 8 onzas con yogurt, fruta natural y granola. Té 0% cal. Tostadas artesanales.",
         "imagen": "Fotos Editadas Mazarino/r_03.png"
       },
       {
         "categoria": "refrigerio",
-        "etiqueta": "Refrigerio",
+        "etiqueta": "",
         "titulo": "Refrigerio Estándar",
         "descripcion": "Milanesa de pollo, mix de lechuga y espinaca, tomate, salsa de la casa, jugo natural.",
         "imagen": "Fotos Editadas Mazarino/0_4.png"
@@ -173,7 +173,7 @@
       {
         "categoria": "refrigerio",
         "etiqueta": "Menú Básico",
-        "titulo": "Menú Wrap de Pollo",
+        "titulo": "Refrigerio Estándar",
         "descripcion": "Wrap de pollo teriyaki, Té 0% cal, fruta fresca de temporada.",
         "imagen": "Fotos Editadas Mazarino/r_01.png"
       },
@@ -187,98 +187,98 @@
       {
         "categoria": "desayuno",
         "etiqueta": "Desayuno",
-        "titulo": "Desayuno",
+        "titulo": "Desayuno Omelette",
         "descripcion": "Jamón ahumado, queso mozzarella, nachos, lechuga, tomate y salsa de guacamole.",
         "imagen": "Fotos Editadas Mazarino/0_6.png"
       },
       {
         "categoria": "desayuno",
         "etiqueta": "Desayuno",
-        "titulo": "Desayuno",
+        "titulo": "Desayuno Milanesa de Pollo",
         "descripcion": "Mix de fruta picada 8 onzas, mix de frutos secos, queso pera. Opción saludable.",
         "imagen": "Fotos Editadas Mazarino/0_7.png"
       },
       {
         "categoria": "desayuno",
         "etiqueta": "Desayuno",
-        "titulo": "Vegetariano",
+        "titulo": "Sandwich Vegetariano Especial",
         "descripcion": "Omelette con jamón ahumado y queso mozzarella, tostadas de frutos rojos, jugo natural.",
         "imagen": "Fotos Editadas Mazarino/0_9.png"
       },
       {
         "categoria": "desayuno",
         "etiqueta": "Brunch",
-        "titulo": "Parfait",
+        "titulo": "Parfait con Fruta Natural",
         "descripcion": "Delicioso e irresistibile y por supuesto saludable.",
         "imagen": "Fotos Editadas Mazarino/0_20.png"
       },
       {
         "categoria": "desayuno",
         "etiqueta": "Brunch",
-        "titulo": "Wrap de Pollo",
+        "titulo": "Brunch de Wrap de Pollo",
         "descripcion": "Delicioso e irresistibile y por supuesto saludable.",
         "imagen": "Fotos Editadas Mazarino/0_21.png"
       },
       {
         "categoria": "desayuno",
         "etiqueta": "Brunch",
-        "titulo": "Brunch Wrap",
+        "titulo": "Brunch de Wraps con Jamón y Queso",
         "descripcion": "Delicioso e irresistibile y por supuesto saludable.",
         "imagen": "Fotos Editadas Mazarino/0_22.png"
       },
       {
         "categoria": "desayuno",
         "etiqueta": "Brunch",
-        "titulo": "Lassagna",
+        "titulo": "Lasaña Artesanal",
         "descripcion": "Omelette con jamón ahumado y queso mozzarella, tostadas de frutos rojos, jugo natural.",
         "imagen": "Fotos Editadas Mazarino/0_8.png"
       },
       {
         "categoria": "desayuno",
         "etiqueta": "Brunch",
-        "titulo": "Crepes",
+        "titulo": "Crepes de Pollo y Champiñones",
         "descripcion": "Tamal con trozos de pollo y tocino, jugo néctar o chocolate, arepa blanca y pan.",
         "imagen": "Fotos Editadas Mazarino/0_10.png"
       },
       {
         "categoria": "personalizado",
         "etiqueta": "Pedidos Personalizados",
-        "titulo": "Alfajores",
+        "titulo": "Barras de Chocolate y Cake Pucks",
         "descripcion": "Wrap de milanesa de pollo apanado, Té 0% cal, mix de fruta 8 onzas, barra de granola.",
         "imagen": "Fotos Editadas Mazarino/0_11.png"
       },
       {
         "categoria": "personalizado",
         "etiqueta": "Cupcakes",
-        "titulo": "Estación de Café Premium",
+        "titulo": "Cupcakes Personalizados",
         "descripcion": "Café de grano colombiano, café capuchino, complementos: canela, vainilla, edulcorante. Incluye thermos de 2L.",
         "imagen": "Fotos Editadas Mazarino/0_12.png"
       },
       {
         "categoria": "personalizado",
         "etiqueta": "Cupcakes",
-        "titulo": "Estación de Té Variado",
+        "titulo": "Cupcakes Artesanales",
         "descripcion": "Selección de tés: verde, manzanilla, hibisco, menta. Incluye hervidor, azucarera y cucharas. Para 20 personas.",
         "imagen": "Fotos Editadas Mazarino/0_13.png"
       },
       {
         "categoria": "personalizado",
-        "etiqueta": "Brownies",
-        "titulo": "Estación Combo Café y Té",
+        "etiqueta": "Mini Brownies",
+        "titulo": "Mini Brownies",
         "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
         "imagen": "Fotos Editadas Mazarino/0_15.png"
       },
       {
         "categoria": "personalizado",
-        "etiqueta": "Bandejas de frutas",
-        "titulo": "Estación Combo Café y Té",
+        "etiqueta": "Bandejas de Frutas",
+        "titulo": "Bandejas de Frutas",
         "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
         "imagen": "Fotos Editadas Mazarino/0_17.png"
       },
       {
         "categoria": "personalizado",
         "etiqueta": "Chocolates",
-        "titulo": "Galletas gourmet",
+        "titulo": "Monedas de Chocolate",
         "descripcion": "Galletas con almendras y nueces con chocolate blanco y negro.",
         "imagen": "Fotos Editadas Mazarino/0_19.png"
       },
