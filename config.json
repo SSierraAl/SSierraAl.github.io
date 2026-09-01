@@ -34,7 +34,7 @@
       "max_ancho": "450px"
     },
     "titulo_principal": "Refrigerios & Brunch Empresarial",
-    "subtitulo": "Soluciones gastronómicas frescas, equilibradas y presentadas con excelencia para reuniones, capacitaciones, eventos corporativos y oficinas en Bogotá.",
+    "subtitulo": "Soluciones gastronómicas frescas, equilibradas y presentadas con excelencia para reuniones, capacitaciones, eventos corporativos y empresas en Bogotá.",
     "boton_1": { "texto": "Ver Menú", "enlace": "#menu" },
     "boton_2": { "texto": "Cotizar Ahora", "enlace": "#contacto" },
     "video": {
@@ -47,7 +47,7 @@
     "nota": "Sección Sobre Nosotros",
     "titulo_pequeno": "Sobre Nosotros",
     "titulo_grande": "Cuidamos Cada Detalle de tu Evento",
-    "parrafo_1": "En Mazarino creemos que una buena reunión se construye desde los detalles más pequeños. Nos especializamos en la preparación y entrega de refrigerios y brunch de alta calidad para empresas, cuidando cada ingrediente, la presentación y la puntualidad.",
+    "parrafo_1": "En Mazarino creemos que una buena reunión se construye desde los detalles más pequeños. Nos especializamos en la preparación, entrega de refrigerios y brunch de alta calidad para empresas, cuidando cada ingrediente, la presentación y la puntualidad.",
     "parrafo_2": "Llevamos 10 años siendo aliados estratégicos para las empresas, brindándoles opciones saludables, novedosas y ajustadas a las necesidades de nuestros clientes.",
     "imagen": {
       "src": "Fotos Editadas Mazarino/1.png",
@@ -201,6 +201,20 @@
       {
         "categoria": "desayuno",
         "etiqueta": "Brunch",
+        "titulo": "Wrap de Pollo",
+        "descripcion": "Delicioso e irresistibile y por supuesto saludable.",
+        "imagen": "Fotos Editadas Mazarino/0_21.png"
+      },
+      {
+        "categoria": "desayuno",
+        "etiqueta": "Brunch",
+        "titulo": "Brunch Wrap",
+        "descripcion": "Delicioso e irresistibile y por supuesto saludable.",
+        "imagen": "Fotos Editadas Mazarino/0_22.png"
+      },
+      {
+        "categoria": "desayuno",
+        "etiqueta": "Brunch",
         "titulo": "Lassagna",
         "descripcion": "Omelette con jamón ahumado y queso mozzarella, tostadas de frutos rojos, jugo natural.",
         "imagen": "Fotos Editadas Mazarino/0_8.png"
@@ -274,6 +288,20 @@
         "titulo": "Pasantes y bebidas",
         "descripcion": "Cockteles personalizados, y [asantes variados diseñados a la medida, refrescantes y deliciosos.",
         "imagen": "Fotos Editadas Mazarino/0_18.png"
+      },
+      {
+        "categoria": "personalizado",
+        "etiqueta": "Para compartir",
+        "titulo": "Anchetas",
+        "descripcion": "Cockteles personalizados, y [asantes variados diseñados a la medida, refrescantes y deliciosos.",
+        "imagen": "Fotos Editadas Mazarino/0_23.png"
+      },
+      {
+        "categoria": "personalizado",
+        "etiqueta": "Para compartir",
+        "titulo": "Tablas de quezos",
+        "descripcion": "Cockteles personalizados, y [asantes variados diseñados a la medida, refrescantes y deliciosos.",
+        "imagen": "Fotos Editadas Mazarino/0_24.png"
       }
     ]
   },

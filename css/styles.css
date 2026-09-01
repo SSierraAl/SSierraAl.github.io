@@ -16,16 +16,17 @@
     ===================================================== */
 :root {
     /* COLORES PRINCIPALES - Paleta Púrpura Mazarino */
-    --primary-color: #820f35;        /* Burgundy - color principal */
-    --primary-dark: #6a0828;         /* Burgundy oscuro para hover */
-    --primary-light: #f2c5e0;        /* Rosa claro para fondos */
-    --accent-color: #d43790;         /* Rosa vibrante para acentos */
-    --accent-light: #ec8fd0;         /* Magenta suave */
+    --primary-color: #9B1B4A;        /* Magenta/burgundy más limpio y vivo (menos oscuro que #820f35) */
+    --primary-dark: #6F1234;         /* Hover / oscuro */
+    --primary-light: #F8E8F0;        /* Rosa muy suave para fondos y tags */
+    --accent-color: #D94A8A;         /* Rosa vibrante (más alegre) */
+    --accent-teal: #2EC4B6;          /* Teal del logo – NUEVO acento fresco */
+    --accent-teal-dark: #1A9B8E;     /* Hover teal */
 
     /* COLORES DE TEXTO */
-    --text-dark: #2d0a18;            /* Texto oscuro (púrpura muy oscuro) */
-    --text-medium: #6b4e5e;          /* Texto medio */
-    --text-light: #ffffff;           /* Texto blanco */
+    --text-dark: #2C1A22;            /* Casi negro con un toque cálido */
+    --text-medium: #5C4A52;          /* Texto body */
+    --text-light: #ffffff;
 
     /* COLORES DE FONDO */
     --bg-white: #ffffff;
@@ -175,7 +176,7 @@ img {
 .hero-section {
     /* PERSONALIZAR: Cambia esta URL por tu imagen de portada */
     background: url('https://images.unsplash.com/photo-1556910103-1c027f57f77f?auto=format&fit=crop&w=1920') center center / cover no-repeat;
-    min-height: 100vh;
+    min-height: 70vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -188,7 +189,7 @@ img {
     width: 100%;
     height: 100%;
     /* Degradado: BLANCO en SUPERIOR IZQUIERDA -> púrpura en BOTTOM RIGHT (315deg) */
-    background: linear-gradient(90deg, #ffffff 0%, rgba(106, 8, 40, 0.7) 50%, rgba(173, 31, 74, 0.95) 100%);
+    background: linear-gradient(180deg, #ffffff 0%, rgba(253, 248, 250, 0.85) 50%, rgba(137, 21, 64, 0.82) 100%);
     z-index: 1;
 }
 
@@ -686,3 +687,5 @@ section {
 .rounded-3 {
     border-radius: var(--border-radius) !important;
 }
+
+
