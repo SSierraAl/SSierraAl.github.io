@@ -276,7 +276,7 @@
         "imagen": "Fotos Editadas Mazarino/0_18.png"
       },
       {
-        "categoria": "personalizado",
+        "categoria": "estacion",
         "etiqueta": "Mesa de Dulces",
         "titulo": "Estación Combo Café y Té",
         "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
@@ -295,6 +295,13 @@
         "titulo": "Estaciones de café",
         "descripcion": "Cockteles personalizados, y [asantes variados diseñados a la medida, refrescantes y deliciosos.",
         "imagen": "Fotos Editadas Mazarino/0_26.png"
+      },
+      {
+        "categoria": "estacion",
+        "etiqueta": "Pasabocas",
+        "titulo": "Mesa de dulces",
+        "descripcion": "Cockteles personalizados, y [asantes variados diseñados a la medida, refrescantes y deliciosos.",
+        "imagen": "Fotos Editadas Mazarino/0_27.png"
       },
       {
         "categoria": "personalizado",
