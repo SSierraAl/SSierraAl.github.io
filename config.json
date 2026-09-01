@@ -145,16 +145,16 @@
       {
         "categoria": "refrigerio",
         "etiqueta": "Menú Básico",
-        "titulo": "Menú Wrap de Pollo",
-        "descripcion": "Wrap de pollo teriyaki, Té 0% cal, fruta fresca de temporada.",
-        "imagen": "Fotos Editadas Mazarino/0_1.jpeg"
-      },
-      {
-        "categoria": "refrigerio",
-        "etiqueta": "Menú Básico",
         "titulo": "Brunch con Parfait",
         "descripcion": "Parfait 8 onzas con yogurt, fruta natural y granola. Té 0% cal. Tostadas artesanales.",
         "imagen": "Fotos Editadas Mazarino/0_2.png"
+      },
+      {
+        "categoria": "refrigerio",
+        "etiqueta": "Refrigerio",
+        "titulo": "Refrigerio Estándar",
+        "descripcion": "Milanesa de pollo, mix de lechuga y espinaca, tomate, salsa de la casa, jugo natural.",
+        "imagen": "Fotos Editadas Mazarino/0_4.png"
       },
       {
         "categoria": "refrigerio",
@@ -172,10 +172,10 @@
       },
       {
         "categoria": "refrigerio",
-        "etiqueta": "Refrigerio",
-        "titulo": "Refrigerio Estándar",
-        "descripcion": "Milanesa de pollo, mix de lechuga y espinaca, tomate, salsa de la casa, jugo natural.",
-        "imagen": "Fotos Editadas Mazarino/0_4.png"
+        "etiqueta": "Menú Básico",
+        "titulo": "Menú Wrap de Pollo",
+        "descripcion": "Wrap de pollo teriyaki, Té 0% cal, fruta fresca de temporada.",
+        "imagen": "Fotos Editadas Mazarino/0_1.jpeg"
       },
       {
         "categoria": "refrigerio",
