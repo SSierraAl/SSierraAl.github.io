@@ -266,13 +266,6 @@
         "etiqueta": "Bandejas de frutas",
         "titulo": "Estación Combo Café y Té",
         "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
-        "imagen": "Fotos Editadas Mazarino/0_16.png"
-      },
-      {
-        "categoria": "personalizado",
-        "etiqueta": "Bandejas de frutas",
-        "titulo": "Estación Combo Café y Té",
-        "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
         "imagen": "Fotos Editadas Mazarino/0_17.png"
       },
       {
@@ -288,6 +281,27 @@
         "titulo": "Pasantes y bebidas",
         "descripcion": "Cockteles personalizados, y [asantes variados diseñados a la medida, refrescantes y deliciosos.",
         "imagen": "Fotos Editadas Mazarino/0_18.png"
+      },
+      {
+        "categoria": "estacion",
+        "etiqueta": "Pasabocas",
+        "titulo": "Estaciones de café",
+        "descripcion": "Cockteles personalizados, y [asantes variados diseñados a la medida, refrescantes y deliciosos.",
+        "imagen": "Fotos Editadas Mazarino/0_25.png"
+      },
+      {
+        "categoria": "estacion",
+        "etiqueta": "Bandejas de frutas",
+        "titulo": "Estación Combo Café y Té",
+        "descripcion": "Café colombiano + 4 variedades de té. Thermos 2L café + hervidor té. Azúcar, edulcorante, leches vegetales.",
+        "imagen": "Fotos Editadas Mazarino/0_16.png"
+      },
+      {
+        "categoria": "estacion",
+        "etiqueta": "Pasabocas",
+        "titulo": "Estaciones de café",
+        "descripcion": "Cockteles personalizados, y [asantes variados diseñados a la medida, refrescantes y deliciosos.",
+        "imagen": "Fotos Editadas Mazarino/0_26.png"
       },
       {
         "categoria": "personalizado",
