@@ -160,6 +160,13 @@
         "categoria": "refrigerio",
         "etiqueta": "Refrigerio",
         "titulo": "Refrigerio Estándar",
+        "descripcion": "Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.",
+        "imagen": "Fotos Editadas Mazarino/r_01.png"
+      },
+      {
+        "categoria": "refrigerio",
+        "etiqueta": "Refrigerio",
+        "titulo": "Refrigerio Estándar",
         "descripcion": "Milanesa de pollo, mix de lechuga y espinaca, tomate, salsa de la casa, jugo natural.",
         "imagen": "Fotos Editadas Mazarino/0_4.png"
       },
@@ -169,6 +176,13 @@
         "titulo": "Refrigerio Estándar",
         "descripcion": "Milanesa de pollo, mix de lechuga y espinaca, tomate, salsa de la casa, jugo natural.",
         "imagen": "Fotos Editadas Mazarino/0_5.png"
+      },
+      {
+        "categoria": "refrigerio",
+        "etiqueta": "Refrigerio",
+        "titulo": "Refrigerio Estándar",
+        "descripcion": "Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.",
+        "imagen": "Fotos Editadas Mazarino/r_02.png"
       },
       {
         "categoria": "desayuno",
