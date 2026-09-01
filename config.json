@@ -137,13 +137,6 @@
     "productos": [
       {
         "categoria": "refrigerio",
-        "etiqueta": "Refrigerio",
-        "titulo": "Refrigerio Estándar",
-        "descripcion": "Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.",
-        "imagen": "Fotos Editadas Mazarino/0_3.png"
-      },
-      {
-        "categoria": "refrigerio",
         "etiqueta": "Menú Básico",
         "titulo": "Brunch con Parfait",
         "descripcion": "Parfait 8 onzas con yogurt, fruta natural y granola. Té 0% cal. Tostadas artesanales.",
@@ -155,6 +148,13 @@
         "titulo": "Refrigerio Estándar",
         "descripcion": "Milanesa de pollo, mix de lechuga y espinaca, tomate, salsa de la casa, jugo natural.",
         "imagen": "Fotos Editadas Mazarino/0_4.png"
+      },
+      {
+        "categoria": "refrigerio",
+        "etiqueta": "Refrigerio",
+        "titulo": "Refrigerio Estándar",
+        "descripcion": "Elegir: 1 Sanduche + 1 Bebida + 1 Complemento. Sanduches de jamón, queso, pollo o mexicano.",
+        "imagen": "Fotos Editadas Mazarino/0_3.png"
       },
       {
         "categoria": "refrigerio",
